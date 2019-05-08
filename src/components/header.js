@@ -47,7 +47,7 @@ const MiniCart = styled.p`
   border: 3px solid #ffd100;
   z-index: 100;
 
-  @media (max-width: 570px) {
+  @media (max-width: 700px) {
     font-size: 80%;
     padding: 0;
   }

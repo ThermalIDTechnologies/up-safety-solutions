@@ -1,6 +1,6 @@
 import React from "react"
 import PageTransition from "gatsby-v2-plugin-page-transitions"
-import { Link } from "gatsby"
+import { Link, graphql } from "gatsby"
 import "react-responsive-carousel/lib/styles/carousel.min.css"
 import { Carousel } from "react-responsive-carousel"
 import Header from "../components/header"

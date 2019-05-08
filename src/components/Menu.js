@@ -23,6 +23,11 @@ const StyledLink = styled.p`
   cursor: pointer;
   font-family: "Zilla Slab";
 
+  @media (max-width: 670px) {
+    font-size: 90%;
+    padding: 0 15px;
+  }
+
   @media (max-width: 570px) {
     font-size: 80%;
     padding: 0 10px;
@@ -30,7 +35,6 @@ const StyledLink = styled.p`
 
   @media (max-width: 381px) {
     font-size: 70%;
-    padding: 0 10px;
   }
 `
 
@@ -59,11 +63,12 @@ const MenuItem = styled.li`
 `
 
 const NavSubMenu = styled.ul`
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
   list-style: none;
   margin: 0;
 
-  @media (max-width: 470px) {
+  @media (max-width: 670px) {
     display: block;
   }
 `
@@ -86,6 +91,7 @@ const SubLink = styled(Link)`
   font-family: "Zilla Slab";
 `
 const SubMenuContainer = styled.div`
+  display: flex;
   font-weight: 300;
   text-transform: none;
   position: absolute;
@@ -102,6 +108,10 @@ const SubMenuContainer = styled.div`
 
   @media (max-width: 930px) {
     width: 100%;
+  }
+
+  @media (max-width: 670px) {
+    display: block;
   }
 `
 
@@ -120,6 +130,11 @@ const Menu = () => (
                   </SubMenuItem>
                   <SubMenuItem>
                     <SubLink to="/category-eyewear">Eyewear</SubLink>
+                  </SubMenuItem>
+                  <SubMenuItem>
+                    <SubLink to="/category-first-aid-medical">
+                      First Aid/Medical
+                    </SubLink>
                   </SubMenuItem>
                 </NavSubMenu>
                 <NavSubMenu>
@@ -147,11 +162,7 @@ const Menu = () => (
                   </SubMenuItem>
                 </NavSubMenu>
                 <NavSubMenu>
-                  <SubMenuItem>
-                    <SubLink to="/category-first-aid-medical">
-                      First Aid/Medical
-                    </SubLink>
-                  </SubMenuItem>
+                  
                 </NavSubMenu>
               </SubMenuContainer>
             )}

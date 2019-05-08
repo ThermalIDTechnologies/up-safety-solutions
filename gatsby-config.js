@@ -6,7 +6,8 @@ module.exports = {
   siteMetadata: {
     title: `Up Safety Solutions`,
     description: `Safety equipment and clothing for various industries.`,
-    author: `@gatsbyjs`,
+    author: `Up Safety Solutions`,
+    siteUrl: `https://www.upsafetysolutions.com`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -76,6 +77,7 @@ module.exports = {
         trackingId: "UA-116389826-1",
       },
     },
+    `gatsby-plugin-sitemap`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // 'gatsby-plugin-offline',
