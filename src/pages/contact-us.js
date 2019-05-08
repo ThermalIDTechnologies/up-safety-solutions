@@ -85,7 +85,6 @@ const ContactUs = () => {
         >
           <input type="hidden" name="form-name" value="Contact" />
           <input type="hidden" name="bot-field" />
-          <div data-netlify-recaptcha="true" />
           <p>
             <StyledLabel>
               Your Name: <StyledInput type="text" name="name" />

@@ -83,7 +83,6 @@ const RequestQuote = () => {
         >
           <input type="hidden" name="form-name" value="Request a Quote" />
           <input type="hidden" name="bot-field" />
-          <div data-netlify-recaptcha="true" />
           <p>
             <StyledLabel>
               First Name* <StyledInput type="text" name="firstName" required />
