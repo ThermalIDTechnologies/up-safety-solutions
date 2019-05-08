@@ -189,6 +189,11 @@ const Menu = () => (
                     <SubLink to="/brand-west-chester">West Chester</SubLink>
                   </SubMenuItem>
                 </NavSubMenu>
+                <NavSubMenu>
+                  <SubMenuItem>
+                    <SubLink to="/brand-honeywell">Honeywell</SubLink>
+                  </SubMenuItem>
+                </NavSubMenu>
               </SubMenuContainer>
             )}
           </MenuItem>

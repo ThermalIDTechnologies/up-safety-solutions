@@ -91,6 +91,7 @@ const Product = ({ data: { prismicProduct }, location }) => {
             }}
           >
             <Title>{data.title.text}</Title>
+            <p>{data.qty_per_order.text}</p>
             <h3>Price: ${data.price}</h3>
             <form
               action="https://upsafetysolutions.foxycart.com/cart"
@@ -263,6 +264,9 @@ export const pageQuery = graphql`
         }
         weight
         quantity_hmac {
+          text
+        }
+        qty_per_order {
           text
         }
         desc_title {

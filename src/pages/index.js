@@ -12,7 +12,7 @@ import PropTypes from "prop-types"
 import SEO from "../components/seo"
 import SliderBanner1 from "../components/sliderBanner1"
 import SliderBanner2 from "../components/sliderBanner2"
-import SliderBanner3 from "../components/sliderBanner3"
+// import SliderBanner3 from "../components/sliderBanner3"
 import SmallBanner1 from "../components/smallBanner1"
 import SmallBanner2 from "../components/smallBanner2"
 import SmallBanner3 from "../components/smallBanner3"
@@ -78,9 +78,6 @@ const IndexPage = ({
               <SliderBanner2 />
             </Link>
           </div>
-          <div>
-            <SliderBanner3 />
-          </div>
         </Carousel>
         <div
           style={{
@@ -95,7 +92,9 @@ const IndexPage = ({
               <SmallBanner1 />
             </SmBannerWrapper>
             <SmBannerWrapper>
-              <SmallBanner2 />
+              <Link to="/brand-honeywell">
+                <SmallBanner2 />
+              </Link>
             </SmBannerWrapper>
             <SmBannerWrapper>
               <SmallBanner3 />
