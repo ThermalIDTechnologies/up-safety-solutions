@@ -21,24 +21,26 @@ const ItemLink = styled(Link)`
   color: black;
 `
 
-const ItemTitle = styled.p`
-  font-size: .9em;
-  line-height: 1.45em;
+const ItemTitle = styled.h3`
+  font-size: 1em;
+  line-height: 1.2em;
   min-height: 100px;
   margin-bottom: .5rem;
   margin-top: 1.45rem;
+  font-weight: 600;
 
   @media (max-width: 568px) {
-    font-size: 1.2em;
+    font-size: 1.3em;
   }
 `
 
-const ItemPrice = styled.p`
+const ItemPrice = styled.h3`
   color: #ff5100;
-  font-size: .9em;
+  font-size: 1.1em;
+  font-weight: 700;
 
   @media (max-width: 568px) {
-    font-size: 1.2em;
+    font-size: 1.3em;
   }
 `
 

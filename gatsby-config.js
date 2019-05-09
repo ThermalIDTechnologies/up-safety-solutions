@@ -48,7 +48,7 @@ module.exports = {
         fonts: [
           {
             family: `Zilla Slab`,
-            variants: [`600`],
+            variants: [`600`, `700`],
           },
           {
             family: `Montserrat`,
