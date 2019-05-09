@@ -78,7 +78,7 @@ const Header = () => (
     <NavMenu>
       <MiniCart data-fc-id="minicart minicart-empty">
         
-        <a style={{padding: `10px`,}} href="https://upsafetysolutions.foxycart.com/cart?cart=view">
+        <a style={{padding: `10px`,}} rel="preconnect" href="https://upsafetysolutions.foxycart.com/cart?cart=view">
         <span style={{color: `#fff`, paddingRight: `8px`,}}>CART</span>
           <span style={{color: `#fff`,}} data-fc-id="minicart-quantity">0</span>
         </a>
