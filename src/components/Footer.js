@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import {Link} from "gatsby"
+import { Link } from "gatsby"
 import Btn from "./NLBtn"
 
 import Logo from "../images/Asset 1.png"
@@ -8,7 +8,6 @@ import FaceBook from "../images/3185259 - circle design facebook material.png"
 import Instagram from "../images/3185257 - circle design instagram material.png"
 import YouTube from "../images/3185252 - circle design material youtube.png"
 import Email from "../images/3185260 - circle design email material.png"
-
 
 const PageFooter = styled.footer`
   background: #000;
@@ -20,28 +19,28 @@ const PageFooter = styled.footer`
   right: 0;
   width: 100%;
   margin-top: 1.45rem;
-  display: grid; 
-  grid-template-columns: 4vw 1fr 4vw; 
+  display: grid;
+  grid-template-columns: 4vw 1fr 4vw;
   grid-template-rows: auto auto;
 
   @media (min-width: 960px) {
-
   }
 `
 
 const FooterContainer = styled.div`
   grid-column: 2 / 3;
-  display: grid; /* ACTING AS A GRID CONTAINER */ grid-template-columns: 2fr 2fr 2fr 3fr; 
-  grid-template-rows: auto auto; 
+  display: grid; /* ACTING AS A GRID CONTAINER */
+  grid-template-columns: 2fr 2fr 2fr 3fr;
+  grid-template-rows: auto auto;
   grid-template-areas: "logo navigation secondary social" "contact contact . newsletter";
 
   @media (max-width: 960px) {
-    grid-template-columns: 1fr 1fr;  
+    grid-template-columns: 1fr 1fr;
     grid-template-areas: "logo social" "contact newsletter";
   }
 
   @media (max-width: 768px) {
-    grid-template-columns: 1fr; 
+    grid-template-columns: 1fr;
     grid-template-areas: "logo" "social" "newsletter" "contact";
   }
 `
@@ -51,13 +50,13 @@ const LogoWrapper = styled.div`
   max-width: 300px;
 
   @media (max-width: 768px) {
-    justify-self: center; 
+    justify-self: center;
     align-self: center;
   }
 `
 
 const FooterNav = styled.ul`
-  grid-area: navigation; 
+  grid-area: navigation;
   justify-self: center;
   margin: 0;
   padding: 0;
@@ -68,7 +67,7 @@ const FooterNav = styled.ul`
 `
 
 const FooterSecondaryNav = styled.ul`
-  grid-area: secondary; 
+  grid-area: secondary;
   justify-self: center;
   margin: 0;
   padding: 0;
@@ -89,17 +88,18 @@ const PageLink = styled(Link)`
   margin: 0;
   padding: 0;
   color: #fff;
-  transition: all ease-in-out .4s;
+  transition: all ease-in-out 0.4s;
 
-  &:hover { 
-    color: #FFD100; 
+  &:hover {
+    color: #ffd100;
   }
 `
 
 const SocialNetworks = styled.div`
   grid-area: social;
-  display: grid; /* ACTING AS A GRID CONTAINER */ grid-template-columns: repeat(3, 1fr); 
-  grid-template-rows: auto auto; 
+  display: grid; /* ACTING AS A GRID CONTAINER */
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto auto;
   justify-items: center;
   border-bottom: 2px solid #ffd100;
 
@@ -117,7 +117,7 @@ const ContactBlock = styled.div`
   align-self: end;
 
   @media (max-width: 768px) {
-    justify-self: center; 
+    justify-self: center;
     align-self: center;
   }
 `
@@ -127,17 +127,17 @@ const OutsideLink = styled.a`
   margin: 0;
   padding: 0;
   color: #fff;
-  display: block; 
-  border: 2px solid #fff; 
-  padding: 0.5rem; 
-  margin: 10px 0 0; 
-  text-align: center; 
+  display: block;
+  border: 2px solid #fff;
+  padding: 0.5rem;
+  margin: 10px 0 0;
+  text-align: center;
   width: 70%;
-  transition: all ease-in-out .4s;
+  transition: all ease-in-out 0.4s;
 
-  &:hover { 
-    border: 2px solid #FF5100; 
-    color: #FFD100; 
+  &:hover {
+    border: 2px solid #ff5100;
+    color: #ffd100;
   }
 
   @media (max-width: 768px) {
@@ -156,12 +156,12 @@ const NewsLetter = styled.div`
 `
 
 const BottomLine = styled.div`
-  display: flex; 
+  display: flex;
   align-items: center;
   justify-content: center;
-  color: #FFF;
-  background: #6B6B6B;
-  font-size: .7rem;
+  color: #fff;
+  background: #6b6b6b;
+  font-size: 0.7rem;
 
   p {
     margin: 0;
@@ -176,93 +176,111 @@ const EmailIconContainer = styled.div`
   }
 `
 
-
 export default function Footer() {
   return (
     <>
-    <PageFooter>
-      <FooterContainer>
-        <LogoWrapper>
-          <Link to="/">
-            <img src={Logo} alt="Footer Logo" />
-          </Link>
-        </LogoWrapper>
-        <FooterNav>
-          <ListItem>
-            <PageLink to="/">Home</PageLink>
-          </ListItem>
-          <ListItem>
-            <PageLink to="/about-us">About Us</PageLink>
-          </ListItem>
-          <ListItem>
-            <PageLink to="/blog">Blog</PageLink>
-          </ListItem>
-          <ListItem>
-            <PageLink to="/contact-us">Contact Us</PageLink>
-          </ListItem>
-        </FooterNav>
-        <FooterSecondaryNav>
-          <ListItem>
-            <PageLink to="/request-a-quote">Request a Quote</PageLink>
-          </ListItem>
-          <ListItem>
-            <PageLink to="/shipping-return-policy">Shipping &amp; Returns</PageLink>
-          </ListItem>
-          <ListItem>
-            <PageLink to="/custom-order-policy">Custom Order Policy</PageLink>
-          </ListItem>
-          <ListItem>
-            <PageLink to="/terms-of-use">Terms of Use</PageLink>
-          </ListItem>
-        </FooterSecondaryNav>
-        <ContactBlock>
-          <h3>We're happy to hear from you!</h3>
-          <OutsideLink href="tel:1-888-958-5650">
-            <i/> 1-888-958-5650
-          </OutsideLink>
-          <OutsideLink href="mailto:sales@upsafetysolutions.com">sales@upsafetysolutions.com</OutsideLink>
-        </ContactBlock>
-        <NewsLetter>
-          <div style={{textAlign: `center`,}}>
-            <EmailIconContainer>
-              <a href="mailto:sales@upsafetysolutions.com">
-                <img src={Email} alt="Email" />
+      <PageFooter>
+        <FooterContainer>
+          <LogoWrapper>
+            <Link to="/">
+              <img src={Logo} alt="Up Safety Solutions Logo" />
+            </Link>
+          </LogoWrapper>
+          <FooterNav>
+            <ListItem>
+              <PageLink to="/">Home</PageLink>
+            </ListItem>
+            <ListItem>
+              <PageLink to="/about-us">About Us</PageLink>
+            </ListItem>
+            <ListItem>
+              <PageLink to="/blog">Blog</PageLink>
+            </ListItem>
+            <ListItem>
+              <PageLink to="/contact-us">Contact Us</PageLink>
+            </ListItem>
+          </FooterNav>
+          <FooterSecondaryNav>
+            <ListItem>
+              <PageLink to="/request-a-quote">Request a Quote</PageLink>
+            </ListItem>
+            <ListItem>
+              <PageLink to="/shipping-return-policy">
+                Shipping &amp; Returns
+              </PageLink>
+            </ListItem>
+            <ListItem>
+              <PageLink to="/custom-order-policy">Custom Order Policy</PageLink>
+            </ListItem>
+            <ListItem>
+              <PageLink to="/terms-of-use">Terms of Use</PageLink>
+            </ListItem>
+          </FooterSecondaryNav>
+          <ContactBlock>
+            <h3>We're happy to hear from you!</h3>
+            <OutsideLink href="tel:1-888-958-5650">
+              <i /> 1-888-958-5650
+            </OutsideLink>
+            <OutsideLink href="mailto:sales@upsafetysolutions.com">
+              sales@upsafetysolutions.com
+            </OutsideLink>
+          </ContactBlock>
+          <NewsLetter>
+            <div style={{ textAlign: `center` }}>
+              <EmailIconContainer>
+                <a href="mailto:sales@upsafetysolutions.com">
+                  <img src={Email} alt="Email" />
+                </a>
+              </EmailIconContainer>
+              <p>Subscribe to our Newsletter</p>
+            </div>
+            <div style={{ textAlign: `center` }}>
+              <form
+                style={{ margin: `0` }}
+                action="/?form=success"
+                name="Subscribe"
+                method="post"
+                data-netlify="true"
+                data-netlify-honeypot="bot-field"
+              >
+                <input type="hidden" name="form-name" value="Subscribe" />
+                <input type="hidden" name="bot-field" />
+                <input
+                  style={{ height: `2rem`, borderRadius: `3px`, border: `0` }}
+                  type="email"
+                  name="Enter Your Email Address"
+                  size="20"
+                  required
+                />
+                <Btn type="submit" value="Submit" />
+              </form>
+            </div>
+          </NewsLetter>
+          <SocialNetworks>
+            <h3>View and share our content!</h3>
+            <div style={{ justifySelf: `right` }}>
+              <a href="https://www.facebook.com/Up-Safety-Solutions-435208757038430">
+                <img src={FaceBook} alt="Facebook Logo" />
               </a>
-            </EmailIconContainer>
-            <p>Subscribe to our Newsletter</p>
-          </div>
-          <div style={{textAlign: `center`,}}>
-            <form style={{margin: `0`}} action="/?form=success" name="Subscribe" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
-              <input type="hidden" name="form-name" value="Subscribe" />
-              <input type="hidden" name="bot-field" />
-              <input style={{height: `2rem`, borderRadius: `3px`, border: `0`}} type="email" name="Enter Your Email Address" size="20" required />
-              <Btn type="submit" value="Submit" />
-            </form>
-          </div>
-        </NewsLetter>
-        <SocialNetworks>
-          <h3>View and share our content!</h3>
-          <div style={{justifySelf: `right`}} >
-            <a href="https://www.facebook.com/Up-Safety-Solutions-435208757038430">
-              <img src={FaceBook} alt="Facebook Logo" />
-            </a>
-          </div>
-          <div>
-            <a href="https://www.youtube.com/channel/UCexyI71DdTJfbMUBzQ0dzTQ/featured?view_as=public">
-              <img src={YouTube} alt="YouTube Logo" />
-            </a>
-          </div>
-          <div style={{justifySelf: `left`}} >
-            <a href="https://www.instagram.com/upsafetysolutions/">
-              <img src={Instagram} alt="Instagram Logo" />
-            </a>
-          </div>
-        </SocialNetworks>
-      </FooterContainer>
-    </PageFooter>
-    <BottomLine>
-      <p>© {new Date().getFullYear()} Up Safety Solutions. All Rights Reserved.</p>
-    </BottomLine>
+            </div>
+            <div>
+              <a href="https://www.youtube.com/channel/UCexyI71DdTJfbMUBzQ0dzTQ/featured?view_as=public">
+                <img src={YouTube} alt="YouTube Logo" />
+              </a>
+            </div>
+            <div style={{ justifySelf: `left` }}>
+              <a href="https://www.instagram.com/upsafetysolutions/">
+                <img src={Instagram} alt="Instagram Logo" />
+              </a>
+            </div>
+          </SocialNetworks>
+        </FooterContainer>
+      </PageFooter>
+      <BottomLine>
+        <p>
+          © {new Date().getFullYear()} Up Safety Solutions. All Rights Reserved.
+        </p>
+      </BottomLine>
     </>
   )
 }
