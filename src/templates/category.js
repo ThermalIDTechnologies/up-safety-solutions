@@ -34,7 +34,7 @@ const Category = ({
         <SEO title={`${category}`} pathname={location.pathname} />
         <p><StyledLink to="/">Home</StyledLink>/<StyledLink to="/all-products">All Products</StyledLink></p>
         <div style={{ textAlign: `center`, marginTop: `4rem`, marginBottom: `2rem` }}>
-        <h1>
+        <h1 style={{fontSize: `2rem`}}>
           {totalCount} {totalCount === 1 ? "Product" : "Products"}{" "} in "{category}"
         </h1>
         </div>

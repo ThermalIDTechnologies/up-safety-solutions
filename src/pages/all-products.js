@@ -49,7 +49,7 @@ const AllProducts = ({
             marginBottom: `2rem`,
           }}
         >
-          <h1>All Products</h1>
+          <h1 style={{fontSize: `2rem`}}>All Products</h1>
         </div>
         <h3>Sort by Category:</h3>
         <CategoryList>

@@ -11,7 +11,7 @@ import styled from "styled-components"
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs"
 import "react-tabs/style/react-tabs.css"
 
-const Category = styled.h4`
+const Category = styled.p`
   padding-bottom: 1.45rem;
 
   a {
