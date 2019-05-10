@@ -249,6 +249,7 @@ export default function Footer() {
                   style={{ height: `2rem`, borderRadius: `3px`, border: `0` }}
                   type="email"
                   name="Enter Your Email Address"
+                  label="Enter Your Email Address"
                   size="20"
                   required
                 />

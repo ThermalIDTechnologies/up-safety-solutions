@@ -1,6 +1,18 @@
 import React from "react"
 import Layout from "../components/layout"
 import PageTransition from "gatsby-v2-plugin-page-transitions"
+import styled from "styled-components"
+
+const PageLink = styled.a`
+  text-decoration: none;
+  color: #ff5100;
+  border-bottom: 1px solid #fff;
+  transition: all ease-in-out 0.4s;
+
+  &:hover {
+    border-bottom: 1px solid #ffd100;
+  }
+`
 
 const TermsOfUse = () => {
   return (
@@ -17,17 +29,17 @@ const TermsOfUse = () => {
               <strong>Exact sample</strong>: 12 working days upon receipt of
               order.
               <br /> See{" "}
-              <a href="#color-match">
+              <PageLink href="#color-match">
                 <em>Color Match Charges.</em>
-              </a>
+              </PageLink>
             </li>
             <li>
               <strong>New Orders</strong>: 10 working days after proof approval.
               <br /> See{" "}
               <em>
-                <a href="#art-proof">
+                <PageLink href="#art-proof">
                   Art and Proof Information
-                </a>
+                </PageLink>
                 .
               </em>
             </li>
