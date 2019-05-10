@@ -249,7 +249,9 @@ export default function Footer() {
                   <input
                     style={{ height: `2rem`, borderRadius: `3px`, border: `0` }}
                     type="email"
+                    id="email"
                     name="Enter Your Email Address"
+                    placeholder="email@email.com"
                     size="20"
                     required
                   />
