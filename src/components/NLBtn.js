@@ -21,7 +21,7 @@ const Btn = styled.button`
   transition: all ease-in-out 0.4s;
   background: #FF5100;
   border: 3px solid #FF5100;
-  color: #FFF;
+  color: #000;
   border-radius: 3px;
   -webkit-box-shadow: 2px 2px 0px 2px rgba(230, 73, 0, 1);
   -moz-box-shadow: 2px 2px 0px 2px rgba(230, 73, 0, 1);
@@ -37,7 +37,7 @@ const Btn = styled.button`
   }
 
   &:hover {
-    color: #000;
+    color: #fff;
   }
 
   &:active {
