@@ -19,6 +19,22 @@ const LogoContainer = styled.div`
 
 const LogoWrapper = styled.div`
   max-width: 400px;
+
+  h1 {
+    margin: 0;
+
+    strong {
+      position: absolute;
+      top: -999em;
+      left: -999em;
+      width: 0;
+      height: 0;
+      font-size: 0;
+      line-height: 0;
+      text-indent: -999em;
+      overflow: hidden;
+    }
+  }
 `
 
 const NavMenu = styled.nav`
@@ -26,11 +42,11 @@ const NavMenu = styled.nav`
   align-items: center;
   justify-content: flex-end;
   padding-right: 1rem;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 
   p {
     margin: 0;
-    
+
     a {
       text-decoration: none;
     }
@@ -41,7 +57,7 @@ const MiniCart = styled.p`
   right: 23px;
   position: absolute;
   padding: 4px;
-  font-size: .9rem;
+  font-size: 0.9rem;
   background-color: #000;
   border-radius: 2px;
   border: 3px solid #ffd100;
@@ -61,26 +77,34 @@ const Header = () => (
   <HeaderContainer>
     <LogoContainer>
       <LogoWrapper>
-        <Link
-          to="/"
-          style={{
-            textDecoration: `none`,
-          }}
-        >
-          <img
-            style={{ width: `100%` }}
-            src={Logo}
-            alt="Up Safety Solutions Logo"
-          />
-        </Link>
+        <h1>
+          <strong>Up Safety Solutions</strong>
+          <Link
+            to="/"
+            style={{
+              textDecoration: `none`,
+            }}
+          >
+            <img
+              style={{ width: `100%` }}
+              src={Logo}
+              alt="Up Safety Solutions Logo"
+            />
+          </Link>
+        </h1>
       </LogoWrapper>
     </LogoContainer>
     <NavMenu>
       <MiniCart data-fc-id="minicart minicart-empty">
-        
-        <a style={{padding: `10px`,}} rel="preconnect" href="https://upsafetysolutions.foxycart.com/cart?cart=view">
-        <span style={{color: `#fff`, paddingRight: `8px`,}}>CART</span>
-          <span style={{color: `#fff`,}} data-fc-id="minicart-quantity">0</span>
+        <a
+          style={{ padding: `10px` }}
+          rel="preconnect"
+          href="https://upsafetysolutions.foxycart.com/cart?cart=view"
+        >
+          <span style={{ color: `#fff`, paddingRight: `8px` }}>CART</span>
+          <span style={{ color: `#fff` }} data-fc-id="minicart-quantity">
+            0
+          </span>
         </a>
       </MiniCart>
     </NavMenu>
