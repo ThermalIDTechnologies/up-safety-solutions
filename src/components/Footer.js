@@ -245,14 +245,15 @@ export default function Footer() {
               >
                 <input type="hidden" name="form-name" value="Subscribe" />
                 <input type="hidden" name="bot-field" />
-                <input
-                  style={{ height: `2rem`, borderRadius: `3px`, border: `0` }}
-                  type="email"
-                  name="Enter Your Email Address"
-                  label="Enter Your Email Address"
-                  size="20"
-                  required
-                />
+                <label for="email">
+                  <input
+                    style={{ height: `2rem`, borderRadius: `3px`, border: `0` }}
+                    type="email"
+                    name="Enter Your Email Address"
+                    size="20"
+                    required
+                  />
+                </label>
                 <Btn type="submit" value="Submit" />
               </form>
             </div>
