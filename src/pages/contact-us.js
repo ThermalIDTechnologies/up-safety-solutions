@@ -103,6 +103,49 @@ const ContactUs = () => {
           </p>
           <p>
             <StyledLabel>
+              Category
+            </StyledLabel>
+            <br />
+            <input type="checkbox" name="category" value="Eyewear" /> Eyewear
+            <br />
+            <input
+              type="checkbox"
+              name="category"
+              value="First Aid/Medical"
+            />{" "}
+            First Aid/Medical
+            <br />
+            <input
+              type="checkbox"
+              name="category"
+              value="Head &amp; Face Protection"
+            />{" "}
+            Head &amp; Face Protection
+            <br />
+            <input
+              type="checkbox"
+              name="category"
+              value="Hand Protection"
+            />{" "}
+            Hand Protection
+            <br />
+            <input
+              type="checkbox"
+              name="category"
+              value="Protective Apparel"
+            />{" "}
+            Protective Apparel
+            <br />
+            <input
+              type="checkbox"
+              name="category"
+              value="Foot Protection"
+            />{" "}
+            Foot Protection
+            <br />
+          </p>
+          <p>
+            <StyledLabel>
               Message: <StyledTextarea name="message" />
             </StyledLabel>
           </p>

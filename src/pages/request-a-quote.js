@@ -5,6 +5,7 @@ import PageTransition from "gatsby-v2-plugin-page-transitions"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Btn from "../components/NLBtn"
+import Category from "./../templates/category"
 
 const QuoteForm = styled.form`
   max-width: 400px;
@@ -54,9 +55,9 @@ const RequestQuote = () => {
 
   React.useEffect(() => {
     let searchParams = new URLSearchParams(window.location.search)
-    let form = searchParams.get('form')
+    let form = searchParams.get("form")
 
-    if (form === 'success') {
+    if (form === "success") {
       setSubmitted(true)
       setTimeout(() => {
         setSubmitted(false)
@@ -68,7 +69,9 @@ const RequestQuote = () => {
     <Layout>
       <PageTransition>
         {submitted && (
-          <SuccessMessage><h3>Thanks for your submission!</h3></SuccessMessage>
+          <SuccessMessage>
+            <h3>Thanks for your submission!</h3>
+          </SuccessMessage>
         )}
         <h1>Request a Quote</h1>
         <h4>Phone: 1-888-958-5650</h4>
@@ -114,6 +117,49 @@ const RequestQuote = () => {
                 required
               />
             </StyledLabel>
+          </p>
+          <p>
+            <StyledLabel>
+              Category
+            </StyledLabel>
+            <br />
+            <input type="checkbox" name="category" value="Eyewear" /> Eyewear
+            <br />
+            <input
+              type="checkbox"
+              name="category"
+              value="First Aid/Medical"
+            />{" "}
+            First Aid/Medical
+            <br />
+            <input
+              type="checkbox"
+              name="category"
+              value="Head &amp; Face Protection"
+            />{" "}
+            Head &amp; Face Protection
+            <br />
+            <input
+              type="checkbox"
+              name="category"
+              value="Hand Protection"
+            />{" "}
+            Hand Protection
+            <br />
+            <input
+              type="checkbox"
+              name="category"
+              value="Protective Apparel"
+            />{" "}
+            Protective Apparel
+            <br />
+            <input
+              type="checkbox"
+              name="category"
+              value="Foot Protection"
+            />{" "}
+            Foot Protection
+            <br />
           </p>
           <p>
             <StyledLabel>
