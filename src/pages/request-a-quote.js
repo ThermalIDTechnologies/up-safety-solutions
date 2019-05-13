@@ -118,67 +118,63 @@ const RequestQuote = () => {
               />
             </StyledLabel>
           </p>
-          <div>
-            <StyledLabel>Category:</StyledLabel>
-            <br />
-            <br />
-            <p>
-              <input
-                id="eyewear"
-                type="checkbox"
-                name="category"
-                value="Eyewear"
-              />{" "}
-              <label htmlFor="eyewear">Eyewear</label>
-            </p>
-            <p>
-              <input
-                id="first-aid-medical"
-                type="checkbox"
-                name="category"
-                value="First Aid/Medical"
-              />{" "}
-              <label htmlFor="first-aid-medical">First Aid/Medical</label>
-            </p>
-            <p>
-              <input
-                id="head-and-face-protection"
-                type="checkbox"
-                name="category"
-                value="Head and Face Protection"
-              />{" "}
-              <label htmlFor="head-and-face-protection">
-                Head &amp; Face Protection
-              </label>
-            </p>
-            <p>
-              <input
-                id="hand-protection"
-                type="checkbox"
-                name="category"
-                value="Hand Protection"
-              />{" "}
-              <label htmlFor="hand-protection">Hand Protection</label>
-            </p>
-            <p>
-              <input
-                id="protective-apparel"
-                type="checkbox"
-                name="category"
-                value="Protective Apparel"
-              />{" "}
-              <label htmlFor="protective-apparel">Protective Apparel</label>
-            </p>
-            <p>
-              <input
-                id="foot-protection"
-                type="checkbox"
-                name="category"
-                value="Foot Protection"
-              />{" "}
-              <label htmlFor="foot-protection">Foot Protection</label>
-            </p>
-          </div>
+          <p style={{ fontWeight: `700`, fontSize: `1.05rem` }}>Category:</p>
+          <p>
+            <input
+              id="eyewear"
+              type="checkbox"
+              name="category"
+              value="Eyewear"
+            />{" "}
+            <label htmlFor="eyewear">Eyewear</label>
+          </p>
+          <p>
+            <input
+              id="first-aid-medical"
+              type="checkbox"
+              name="category"
+              value="First Aid/Medical"
+            />{" "}
+            <label htmlFor="first-aid-medical">First Aid/Medical</label>
+          </p>
+          <p>
+            <input
+              id="head-and-face-protection"
+              type="checkbox"
+              name="category"
+              value="Head and Face Protection"
+            />{" "}
+            <label htmlFor="head-and-face-protection">
+              Head &amp; Face Protection
+            </label>
+          </p>
+          <p>
+            <input
+              id="hand-protection"
+              type="checkbox"
+              name="category"
+              value="Hand Protection"
+            />{" "}
+            <label htmlFor="hand-protection">Hand Protection</label>
+          </p>
+          <p>
+            <input
+              id="protective-apparel"
+              type="checkbox"
+              name="category"
+              value="Protective Apparel"
+            />{" "}
+            <label htmlFor="protective-apparel">Protective Apparel</label>
+          </p>
+          <p>
+            <input
+              id="foot-protection"
+              type="checkbox"
+              name="category"
+              value="Foot Protection"
+            />{" "}
+            <label htmlFor="foot-protection">Foot Protection</label>
+          </p>
           <p>
             <StyledLabel>
               Message <StyledTextarea name="message" />
