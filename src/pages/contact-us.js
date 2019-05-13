@@ -101,49 +101,67 @@ const ContactUs = () => {
               />
             </StyledLabel>
           </p>
-          <p>
-            <StyledLabel>
-              Category
-            </StyledLabel>
+          <div>
+            <StyledLabel>Category:</StyledLabel>
             <br />
-            <input type="checkbox" name="category" value="Eyewear" /> Eyewear
             <br />
-            <input
-              type="checkbox"
-              name="category"
-              value="First Aid/Medical"
-            />{" "}
-            First Aid/Medical
-            <br />
-            <input
-              type="checkbox"
-              name="category"
-              value="Head &amp; Face Protection"
-            />{" "}
-            Head &amp; Face Protection
-            <br />
-            <input
-              type="checkbox"
-              name="category"
-              value="Hand Protection"
-            />{" "}
-            Hand Protection
-            <br />
-            <input
-              type="checkbox"
-              name="category"
-              value="Protective Apparel"
-            />{" "}
-            Protective Apparel
-            <br />
-            <input
-              type="checkbox"
-              name="category"
-              value="Foot Protection"
-            />{" "}
-            Foot Protection
-            <br />
-          </p>
+            <p>
+              <input
+                id="eyewear"
+                type="checkbox"
+                name="category"
+                value="Eyewear"
+              />{" "}
+              <label htmlFor="eyewear">Eyewear</label>
+            </p>
+            <p>
+              <input
+                id="first-aid-medical"
+                type="checkbox"
+                name="category"
+                value="First Aid/Medical"
+              />{" "}
+              <label htmlFor="first-aid-medical">First Aid/Medical</label>
+            </p>
+            <p>
+              <input
+                id="head-and-face-protection"
+                type="checkbox"
+                name="category"
+                value="Head and Face Protection"
+              />{" "}
+              <label htmlFor="head-and-face-protection">
+                Head &amp; Face Protection
+              </label>
+            </p>
+            <p>
+              <input
+                id="hand-protection"
+                type="checkbox"
+                name="category"
+                value="Hand Protection"
+              />{" "}
+              <label htmlFor="hand-protection">Hand Protection</label>
+            </p>
+            <p>
+              <input
+                id="protective-apparel"
+                type="checkbox"
+                name="category"
+                value="Protective Apparel"
+              />{" "}
+              <label htmlFor="protective-apparel">Protective Apparel</label>
+            </p>
+            <p>
+              <input
+                id="foot-protection"
+                type="checkbox"
+                name="category"
+                value="Foot Protection"
+              />{" "}
+              <label htmlFor="foot-protection">Foot Protection</label>
+            </p>
+          </div>
           <p>
             <StyledLabel>
               Message: <StyledTextarea name="message" />
