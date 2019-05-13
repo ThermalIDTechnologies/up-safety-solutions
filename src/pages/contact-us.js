@@ -73,7 +73,7 @@ const ContactUs = () => {
           </SuccessMessage>
         )}
         <h1>CONTACT US</h1>
-        <h4>Phone: 999-999-4321</h4>
+        <h4>Phone: 1-888-958-5650</h4>
         <h4>Email: sales@upsafetysolutions.com</h4>
         <SEO title="Contact Us" />
         <ContactForm

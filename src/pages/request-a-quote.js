@@ -71,7 +71,7 @@ const RequestQuote = () => {
           <SuccessMessage><h3>Thanks for your submission!</h3></SuccessMessage>
         )}
         <h1>Request a Quote</h1>
-        <h4>Phone: 999-999-4321</h4>
+        <h4>Phone: 1-888-958-5650</h4>
         <h4>Email: sales@upsafetysolutions.com</h4>
         <SEO title="Request a Quote" />
         <QuoteForm
