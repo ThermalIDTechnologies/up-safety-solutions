@@ -87,12 +87,12 @@ const ContactUs = () => {
           <input type="hidden" name="bot-field" />
           <p>
             <StyledLabel>
-              Your Name: <StyledInput type="text" name="name" />
+              Your Name*: <StyledInput type="text" name="name" required />
             </StyledLabel>
           </p>
           <p>
             <StyledLabel>
-              Your Email:{" "}
+              Your Email*:{" "}
               <StyledInput
                 style={{ marginLeft: `.2rem` }}
                 type="email"
@@ -101,62 +101,55 @@ const ContactUs = () => {
               />
             </StyledLabel>
           </p>
-          <p style={{ fontWeight: `700`, fontSize: `1.05rem` }}>Category:</p>
           <p>
-            <input
-              id="eyewear"
-              type="checkbox"
-              name="category"
-              value="Eyewear"
-            />{" "}
-            <label htmlFor="eyewear">Eyewear</label>
+            <StyledLabel>First Category: </StyledLabel>
+            <select name="first-category[]">
+              <option disabled selected value>
+                {" "}
+                -- select an option --{" "}
+              </option>
+              <option value="Eyewear">Eyewear</option>
+              <option value="First Aid/Medical">First Aid/Medical</option>
+              <option value="Head and Face Protection">
+                Head &amp; Face Protection
+              </option>
+              <option value="Hand Protection">Hand Protection</option>
+              <option value="Protective Apparel">Protective Apparel</option>
+              <option value="Foot Protection">Foot Protection</option>
+            </select>
           </p>
           <p>
-            <input
-              id="first-aid-medical"
-              type="checkbox"
-              name="category"
-              value="First Aid/Medical"
-            />{" "}
-            <label htmlFor="first-aid-medical">First Aid/Medical</label>
+            <StyledLabel>Second Category: </StyledLabel>
+            <select name="second-category[]">
+              <option disabled selected value>
+                -- select an option --
+              </option>
+              <option value="Eyewear">Eyewear</option>
+              <option value="First Aid/Medical">First Aid/Medical</option>
+              <option value="Head and Face Protection">
+                Head &amp; Face Protection
+              </option>
+              <option value="Hand Protection">Hand Protection</option>
+              <option value="Protective Apparel">Protective Apparel</option>
+              <option value="Foot Protection">Foot Protection</option>
+            </select>
           </p>
           <p>
-            <input
-              id="head-and-face-protection"
-              type="checkbox"
-              name="category"
-              value="Head and Face Protection"
-            />{" "}
-            <label htmlFor="head-and-face-protection">
-              Head &amp; Face Protection
-            </label>
-          </p>
-          <p>
-            <input
-              id="hand-protection"
-              type="checkbox"
-              name="category"
-              value="Hand Protection"
-            />{" "}
-            <label htmlFor="hand-protection">Hand Protection</label>
-          </p>
-          <p>
-            <input
-              id="protective-apparel"
-              type="checkbox"
-              name="category"
-              value="Protective Apparel"
-            />{" "}
-            <label htmlFor="protective-apparel">Protective Apparel</label>
-          </p>
-          <p>
-            <input
-              id="foot-protection"
-              type="checkbox"
-              name="category"
-              value="Foot Protection"
-            />{" "}
-            <label htmlFor="foot-protection">Foot Protection</label>
+            <StyledLabel>Third Category: </StyledLabel>
+            <select name="third-category[]">
+              <option disabled selected value>
+                {" "}
+                -- select an option --{" "}
+              </option>
+              <option value="Eyewear">Eyewear</option>
+              <option value="First Aid/Medical">First Aid/Medical</option>
+              <option value="Head and Face Protection">
+                Head &amp; Face Protection
+              </option>
+              <option value="Hand Protection">Hand Protection</option>
+              <option value="Protective Apparel">Protective Apparel</option>
+              <option value="Foot Protection">Foot Protection</option>
+            </select>
           </p>
           <p>
             <StyledLabel>
@@ -167,6 +160,7 @@ const ContactUs = () => {
             <Btn type="submit">Send</Btn>
           </p>
         </ContactForm>
+        <p style={{ fontSize: `.8rem` }}>* required</p>
       </PageTransition>
     </Layout>
   )
