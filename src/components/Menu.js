@@ -148,6 +148,11 @@ const Menu = () => (
                       Hand Protection
                     </SubLink>
                   </SubMenuItem>
+                  <SubMenuItem>
+                    <SubLink to="/category-respiratory-protection">
+                      Respiratory Protection
+                    </SubLink>
+                  </SubMenuItem>
                 </NavSubMenu>
                 <NavSubMenu>
                   <SubMenuItem>
@@ -203,6 +208,14 @@ const Menu = () => (
                 <NavSubMenu>
                   <SubMenuItem>
                     <SubLink to="/brand-honeywell">Honeywell</SubLink>
+                  </SubMenuItem>
+                  <SubMenuItem>
+                    <SubLink to="/brand-best-welds">Best Welds</SubLink>
+                  </SubMenuItem>
+                </NavSubMenu>
+                <NavSubMenu>
+                  <SubMenuItem>
+                    <SubLink to="/brand-3-m">3M</SubLink>
                   </SubMenuItem>
                 </NavSubMenu>
               </SubMenuContainer>
