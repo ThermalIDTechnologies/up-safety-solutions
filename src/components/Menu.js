@@ -165,6 +165,11 @@ const Menu = () => (
                       Foot Protection
                     </SubLink>
                   </SubMenuItem>
+                  <SubMenuItem>
+                    <SubLink to="/category-hearing-protection">
+                      Hearing Protection
+                    </SubLink>
+                  </SubMenuItem>
                 </NavSubMenu>
                 <NavSubMenu>
                   
