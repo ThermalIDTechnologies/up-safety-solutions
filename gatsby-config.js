@@ -79,6 +79,7 @@ module.exports = {
     },
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-netlify`,
+    `gatsby-plugin-robots-txt`
     `gatsby-plugin-offline`,
   ],
 }
