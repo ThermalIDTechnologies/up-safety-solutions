@@ -25,7 +25,7 @@ const ItemTitle = styled.h3`
   font-size: 1em;
   line-height: 1.2em;
   min-height: 100px;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
   margin-top: 1.45rem;
   font-weight: 600;
 
@@ -49,8 +49,10 @@ export default class ProductItem extends Component {
     const { node } = this.props
     return (
       <GridItem>
-        <ItemLink to={`${node.uid}`}>
+        <ItemLink style={{ width: `100%` }} to={`${node.uid}`}>
           <Img fluid={node.data.image.localFile.childImageSharp.fluid} />
+        </ItemLink>
+        <ItemLink to={`${node.uid}`}>
           <ItemTitle>{node.data.title.text}</ItemTitle>
         </ItemLink>
         <ItemPrice>${node.data.price}</ItemPrice>
@@ -88,11 +90,10 @@ export default class ProductItem extends Component {
             type="submit"
             value="Add To Cart"
             className="submit"
-            style={{justifySelf:`end`,}}
+            style={{ justifySelf: `end` }}
           >
             ADD TO CART
           </AddToCartBtn>
-          
         </form>
       </GridItem>
     )
