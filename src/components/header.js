@@ -37,7 +37,7 @@ const LogoWrapper = styled.div`
   }
 `
 
-const NavMenu = styled.nav`
+const MiniCartWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -94,7 +94,7 @@ const Header = () => (
         </h1>
       </LogoWrapper>
     </LogoContainer>
-    <NavMenu>
+    <MiniCartWrapper>
       <MiniCart data-fc-id="minicart minicart-empty">
         <a
           style={{ padding: `10px` }}
@@ -107,7 +107,7 @@ const Header = () => (
           </span>
         </a>
       </MiniCart>
-    </NavMenu>
+    </MiniCartWrapper>
     <Menu />
   </HeaderContainer>
 )
