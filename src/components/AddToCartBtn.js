@@ -60,6 +60,16 @@ const Btn = styled.button`
     font-size: 140%;
     width: 60px;
   }
+
+  @media (max-width: 568px) {
+    padding: 10px 10px;
+    font-size: .9em;
+  }
+
+  @media (max-width: 320px) {
+    padding: 10px 5px;
+    font-size: .8em;
+  }
 `
 
 export default function AddToCartBtn() {

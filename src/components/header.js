@@ -4,6 +4,7 @@ import React from "react"
 import styled from "styled-components"
 
 import Logo from "../images/logo1.png"
+import ShopIcon from "../assets/shop-cart.svg"
 import Menu from "./Menu"
 
 const HeaderContainer = styled.header`
@@ -34,6 +35,10 @@ const LogoWrapper = styled.div`
       text-indent: -999em;
       overflow: hidden;
     }
+
+    img {
+      margin-bottom: 0;
+    }
   }
 `
 
@@ -42,7 +47,8 @@ const MiniCartWrapper = styled.div`
   align-items: center;
   justify-content: flex-end;
   padding-right: 1rem;
-  margin-bottom: 0.5rem;
+  margin: 0.5rem 0;
+  height: 30px;
 
   p {
     margin: 0;
@@ -55,17 +61,23 @@ const MiniCartWrapper = styled.div`
 
 const MiniCart = styled.p`
   right: 23px;
-  position: absolute;
-  padding: 4px;
   font-size: 0.9rem;
-  background-color: #000;
+  background-image: linear-gradient(
+    to right bottom,
+    #ff5100,
+    #ff7600,
+    #ff9600,
+    #ffb400,
+    #ffd100
+  );
   border-radius: 2px;
-  border: 3px solid #ffd100;
+  font-weight: 700;
   z-index: 100;
 
   @media (max-width: 700px) {
     font-size: 80%;
     padding: 0;
+    right: 45%;
   }
 
   @media (max-width: 381px) {
@@ -97,12 +109,14 @@ const Header = () => (
     <MiniCartWrapper>
       <MiniCart data-fc-id="minicart minicart-empty">
         <a
-          style={{ padding: `10px` }}
+          style={{ padding: `2px 10px 0 10px`, display: `flex` }}
           rel="preconnect"
           href="https://upsafetysolutions.foxycart.com/cart?cart=view"
         >
-          <span style={{ color: `#fff`, paddingRight: `8px` }}>CART</span>
-          <span style={{ color: `#fff` }} data-fc-id="minicart-quantity">
+          <span style={{ width: `18px` }}>
+            <ShopIcon />
+          </span>
+          <span style={{ color: `#111`, paddingLeft: `8px` }} data-fc-id="minicart-quantity">
             0
           </span>
         </a>

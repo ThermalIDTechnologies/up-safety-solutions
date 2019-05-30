@@ -15,10 +15,6 @@ const ProductGrid = styled.section`
   @media (max-width: 700px) {
     grid: auto/ repeat(2, 1fr);
   }
-
-  @media (max-width: 470px) {
-    grid: auto/ repeat(1, 1fr);
-  }
 `
 
 export default class FeaturedFrontPage extends Component {

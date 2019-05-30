@@ -30,17 +30,21 @@ const ItemTitle = styled.h3`
   font-weight: 600;
 
   @media (max-width: 568px) {
-    font-size: 1.3em;
+    font-size: 1.1em;
+  }
+
+  @media (max-width: 320px) {
+    font-size: 1em;
   }
 `
 
 const ItemPrice = styled.h3`
   color: #ff5100;
-  font-size: 1.1em;
+  font-size: 1em;
   font-weight: 700;
 
   @media (max-width: 568px) {
-    font-size: 1.3em;
+    font-size: 1.1em;
   }
 `
 

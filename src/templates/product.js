@@ -19,8 +19,8 @@ const Category = styled.p`
     text-decoration: none;
     transition: all ease-in-out 0.4s;
     border-bottom: 1px solid #ff5100;
-    margin-left: .6rem;
-    margin-right: .2rem;
+    margin-left: 0.6rem;
+    margin-right: 0.2rem;
 
     &:hover {
       color: #ff5100;
@@ -71,7 +71,11 @@ const Product = ({ data: { prismicProduct }, location }) => {
   }
   return (
     <Layout>
-      <SEO title={`${data.title.text}`} pathname={location.pathname} description={`${data.desc.text}`} />
+      <SEO
+        title={`${data.title.text}`}
+        pathname={location.pathname}
+        description={`${data.desc.text}`}
+      />
       <PageTransition>
         <Category>
           {categories && <Categories categories={categories} />}
@@ -91,7 +95,7 @@ const Product = ({ data: { prismicProduct }, location }) => {
             }}
           >
             <Title>{data.title.text}</Title>
-            <p style={{fontWeight: `bold`,}}>{data.qty_per_order.text}</p>
+            <p style={{ fontWeight: `bold` }}>{data.qty_per_order.text}</p>
             <h3>Price: ${data.price}</h3>
             <form
               action="https://upsafetysolutions.foxycart.com/cart"
@@ -150,20 +154,19 @@ const Product = ({ data: { prismicProduct }, location }) => {
             </form>
           </div>
         </GridContainer>
-        <Tabs style={{marginTop: `1.45rem`,}}>
+        <Tabs style={{ marginTop: `1.45rem` }}>
           <TabList>
             <Tab>Description</Tab>
             <Tab>Specifications</Tab>
           </TabList>
           <TabPanel>
             <h3>{data.desc_title.text}</h3>
-            <p style={{fontWeight: `bold`}}>Product Description</p>
+            <p style={{ fontWeight: `bold` }}>Product Description</p>
             <p>{data.desc.text}</p>
-
           </TabPanel>
           <TabPanel>
             <div style={{ overflowX: `auto` }}>
-              <table style={{paddingLeft: `15px`}}>
+              <table style={{ paddingLeft: `15px` }}>
                 <tbody>
                   <tr>
                     <td>{data.td1.text}</td>
