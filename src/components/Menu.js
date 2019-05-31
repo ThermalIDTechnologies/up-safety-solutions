@@ -3,6 +3,7 @@ import styled from "styled-components"
 import { Link } from "gatsby"
 
 import Toggle from "./ToggleRPC"
+import ShopIcon from "../assets/shop-cart.svg"
 
 const Nav = styled.nav`
   display: flex;
@@ -11,6 +12,7 @@ const Nav = styled.nav`
   background-color: black;
   color: #fff;
   text-align: left;
+  height: 45px;
 `
 
 const StyledLink = styled.p`
@@ -18,7 +20,7 @@ const StyledLink = styled.p`
   text-decoration: none;
   color: #fff;
   padding: 0 30px;
-  transition: ease-in-out 0.5s;
+  transition: ease-in-out 0.4s;
   margin: 0;
   cursor: pointer;
   font-family: "Zilla Slab";
@@ -29,12 +31,13 @@ const StyledLink = styled.p`
   }
 
   @media (max-width: 570px) {
-    font-size: 80%;
+    font-size: 85%;
     padding: 0 10px;
   }
 
   @media (max-width: 381px) {
-    font-size: 70%;
+    /* font-size: 70%; */
+    padding: 0 5px;
   }
 `
 
@@ -45,6 +48,9 @@ const NavMenu = styled.ul`
   list-style: none;
   margin: 0;
   position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 `
 
 const MenuItem = styled.li`
@@ -58,6 +64,7 @@ const MenuItem = styled.li`
 
     ${StyledLink} {
       color: #ffd100;
+      background-color: #fff;
     }
   }
 `
@@ -92,10 +99,11 @@ const SubLink = styled(Link)`
 `
 const SubMenuContainer = styled.div`
   display: flex;
+  justify-content: center;
   font-weight: 300;
   text-transform: none;
   position: absolute;
-  width: 130%;
+  width: 100%;
   -webkit-box-shadow: 0px 29px 31px -5px rgba(0, 0, 0, 0.19);
   -moz-box-shadow: 0px 29px 31px -5px rgba(0, 0, 0, 0.19);
   box-shadow: 0px 29px 31px -5px rgba(0, 0, 0, 0.19);
@@ -115,15 +123,57 @@ const SubMenuContainer = styled.div`
   }
 `
 
+const MiniCartWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  margin: 0;
+  transition: ease-in-out 0.4s;
+
+  p {
+    margin: 0;
+
+    a {
+      text-decoration: none;
+    }
+  }
+`
+
+const MiniCart = styled.p`
+  background-image: linear-gradient(
+    to right bottom,
+    #ff5100,
+    #ff7600,
+    #ff9600,
+    #ffb400,
+    #ffd100
+  );
+  font-weight: 700;
+  z-index: 100;
+
+  &:hover {
+    background-image: linear-gradient(to bottom, #ffd100, #ffb400, #ff9600, #ff7600, #ff5100);
+  }
+
+  @media (max-width: 700px) {
+    font-size: 80%;
+    padding: 0;
+    right: 45%;
+  }
+
+  @media (max-width: 381px) {
+    font-size: 70%;
+  }
+`
+
 const Menu = () => (
   <Nav>
     <NavMenu>
       <Toggle>
         {({ on, toggle, handleLeave }) => (
           <MenuItem onMouseLeave={handleLeave}>
-            <StyledLink onClick={toggle}>Shop Categories</StyledLink>
+            <StyledLink onClick={toggle}>Categories</StyledLink>
             {on && (
-              <SubMenuContainer>
+              <SubMenuContainer onMouseLeave={handleLeave}>
                 <NavSubMenu>
                   <SubMenuItem>
                     <SubLink to="/all-products">All Products</SubLink>
@@ -183,9 +233,9 @@ const Menu = () => (
       <Toggle>
         {({ on, toggle, handleLeave }) => (
           <MenuItem onMouseLeave={handleLeave}>
-            <StyledLink onClick={toggle}>Shop Brands</StyledLink>
+            <StyledLink onClick={toggle}>Brands</StyledLink>
             {on && (
-              <SubMenuContainer>
+              <SubMenuContainer onMouseLeave={handleLeave}>
                 <NavSubMenu>
                   <SubMenuItem>
                     <SubLink to="/brand-ansell">Ansell</SubLink>
@@ -233,11 +283,11 @@ const Menu = () => (
       </Toggle>
 
       <Toggle>
-        {({ on, toggle, handleHover, handleLeave }) => (
+        {({ on, toggle, handleLeave }) => (
           <MenuItem onMouseLeave={handleLeave}>
             <StyledLink onClick={toggle}>Resources</StyledLink>
             {on && (
-              <SubMenuContainer>
+              <SubMenuContainer onMouseLeave={handleLeave}>
                 <NavSubMenu>
                   <SubMenuItem>
                     <SubLink to="/about-us">About Us</SubLink>
@@ -276,6 +326,24 @@ const Menu = () => (
           </MenuItem>
         )}
       </Toggle>
+      <MenuItem>
+      <MiniCartWrapper>
+      <MiniCart data-fc-id="minicart minicart-empty">
+        <a
+          style={{ padding: `0 10px`, display: `flex` }}
+          rel="preconnect"
+          href="https://upsafetysolutions.foxycart.com/cart?cart=view"
+        >
+          <span style={{ width: `18px` }}>
+            <ShopIcon />
+          </span>
+          <span style={{ color: `#111`, paddingLeft: `8px` }} data-fc-id="minicart-quantity">
+            0
+          </span>
+        </a>
+      </MiniCart>
+    </MiniCartWrapper>
+    </MenuItem>
     </NavMenu>
   </Nav>
 )
