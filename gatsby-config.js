@@ -33,6 +33,23 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-favicon`,
+      options: {
+        logo: "./src/images/UPSafety-Logo-VERTICAL.png",
+   
+        icons: {
+          android: true,
+          appleIcon: true,
+          appleStartup: true,
+          coast: false,
+          favicons: true,
+          firefox: true,
+          yandex: false,
+          windows: false
+        }
+      }
+    },
+    {
       resolve: `gatsby-source-prismic`,
       options: {
         repositoryName: `upsafetysolutions`,

@@ -61,6 +61,7 @@ const AllProducts = ({
           <li><StyledLink to="/category-foot-protection">Foot Protection</StyledLink></li>
           <li><StyledLink to="/category-respiratory-protection">Respiratory Protection</StyledLink></li>
           <li><StyledLink to="/category-hearing-protection">Hearing Protection</StyledLink></li>
+          <li><StyledLink to="/category-signs">Signs</StyledLink></li>
         </CategoryList>
         <ProductCatalog products={edges} />
       </PageTransition>
