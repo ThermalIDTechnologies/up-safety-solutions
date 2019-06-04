@@ -186,6 +186,11 @@ const Menu = () => (
                       First Aid/Medical
                     </SubLink>
                   </SubMenuItem>
+                  <SubMenuItem>
+                    <SubLink to="/category-signs">
+                      Signs
+                    </SubLink>
+                  </SubMenuItem>
                 </NavSubMenu>
                 <NavSubMenu>
                   <SubMenuItem>
@@ -242,6 +247,9 @@ const Menu = () => (
                   </SubMenuItem>
                   <SubMenuItem>
                     <SubLink to="/brand-crews">Crews</SubLink>
+                  </SubMenuItem>
+                  <SubMenuItem>
+                    <SubLink to="/brand-up-safety-solutions">Up Safety Solutions</SubLink>
                   </SubMenuItem>
                 </NavSubMenu>
                 <NavSubMenu>

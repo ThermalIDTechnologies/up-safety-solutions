@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "up-safety-solutions",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "Up Safety Solutions provides quality safety equipment and clothing for various industries.",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Nathan Dalton <ndaltondev@gmail.com>",
   "dependencies": {
     "@gatsby-contrib/gatsby-plugin-elasticlunr-search": "^2.2.1",
     "babel-plugin-styled-components": "^1.10.0",

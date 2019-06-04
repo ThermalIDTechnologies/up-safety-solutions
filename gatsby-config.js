@@ -5,7 +5,7 @@ require("dotenv").config({
 module.exports = {
   siteMetadata: {
     title: `Up Safety Solutions`,
-    description: `Safety equipment and clothing for various industries.`,
+    description: `Up Safety Solutions provides quality safety equipment and clothing for various industries.`,
     author: `Up Safety Solutions`,
     siteUrl: `https://www.upsafetysolutions.com`,
   },
