@@ -3,8 +3,8 @@ import PropTypes from "prop-types"
 import React from "react"
 import styled from "styled-components"
 
-import Logo from "../images/logo1.png"
-// import ShopIcon from "../assets/shop-cart.svg"
+// import Logo from "../images/logo1.png"
+import Logo from "../assets/logo.svg"
 import Menu from "./Menu"
 
 const HeaderContainer = styled.header`
@@ -15,11 +15,11 @@ const LogoContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 1.75rem 1.0875rem 0;
+  padding: 1.75rem 1.0875rem 1.45rem;
 `
 
 const LogoWrapper = styled.div`
-  max-width: 400px;
+  width: 450px;
 
   h1 {
     margin: 0;
@@ -50,9 +50,8 @@ const Header = () => (
               textDecoration: `none`,
             }}
           >
-            <img
+            <Logo
               style={{ width: `100%` }}
-              src={Logo}
               alt="Up Safety Solutions Logo"
             />
           </Link>
