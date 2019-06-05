@@ -3,7 +3,6 @@ import PropTypes from "prop-types"
 import React from "react"
 import styled from "styled-components"
 
-// import Logo from "../images/logo1.png"
 import Logo from "../assets/logo.svg"
 import Menu from "./Menu"
 

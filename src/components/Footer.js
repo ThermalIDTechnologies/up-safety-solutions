@@ -3,15 +3,14 @@ import styled from "styled-components"
 import { Link } from "gatsby"
 import Btn from "./NLBtn"
 
-import Logo from "../images/Asset 1.png"
-import FaceBook from "../images/3185259 - circle design facebook material.png"
-import Instagram from "../images/3185257 - circle design instagram material.png"
-import YouTube from "../images/3185252 - circle design material youtube.png"
-import Email from "../images/3185260 - circle design email material.png"
+import Logo from "../assets/logo-white.svg"
+import FaceBook from "../assets/facebook.svg"
+import Instagram from "../assets/instagram.svg"
+import YouTube from "../assets/youtube.svg"
+import Email from "../assets/email.svg"
 
 const PageFooter = styled.footer`
   background: #000;
-  /* border-top: 2px solid #ffd100; */
   bottom: 0;
   color: #fff;
   left: 0;
@@ -22,9 +21,6 @@ const PageFooter = styled.footer`
   display: grid;
   grid-template-columns: 4vw 1fr 4vw;
   grid-template-rows: auto auto;
-
-  @media (min-width: 960px) {
-  }
 `
 
 const FooterContainer = styled.div`
@@ -47,7 +43,7 @@ const FooterContainer = styled.div`
 
 const LogoWrapper = styled.div`
   grid-area: logo;
-  max-width: 300px;
+  width: 300px;
 
   @media (max-width: 768px) {
     justify-self: center;
@@ -169,7 +165,8 @@ const BottomLine = styled.div`
 `
 
 const EmailIconContainer = styled.div`
-  padding-top: 1.45rem;
+  width: 48px;
+  margin: 0 auto;
 
   @media (max-width: 768px) {
     padding-top: 0;
@@ -183,7 +180,7 @@ export default function Footer() {
         <FooterContainer>
           <LogoWrapper>
             <Link to="/">
-              <img src={Logo} alt="Up Safety Solutions Logo" />
+              <Logo alt="Up Safety Solutions Logo" />
             </Link>
           </LogoWrapper>
           <FooterNav>
@@ -229,7 +226,7 @@ export default function Footer() {
             <div style={{ textAlign: `center` }}>
               <EmailIconContainer>
                 <a href="mailto:sales@upsafetysolutions.com">
-                  <img src={Email} alt="Email" />
+                  <Email alt="Email Icon" />
                 </a>
               </EmailIconContainer>
               <p>Subscribe to our Newsletter</p>
@@ -261,19 +258,19 @@ export default function Footer() {
           </NewsLetter>
           <SocialNetworks>
             <h3>View and share our content!</h3>
-            <div style={{ justifySelf: `right` }}>
+            <div style={{ justifySelf: `right`, width: `48px` }}>
               <a href="https://www.facebook.com/Up-Safety-Solutions-435208757038430">
-                <img src={FaceBook} alt="Facebook Logo" />
+                <FaceBook alt="Facebook Logo" />
               </a>
             </div>
-            <div>
+            <div style={{width: `48px` }}>
               <a href="https://www.youtube.com/channel/UCexyI71DdTJfbMUBzQ0dzTQ/featured?view_as=public">
-                <img src={YouTube} alt="YouTube Logo" />
+                <YouTube alt="YouTube Logo" />
               </a>
             </div>
-            <div style={{ justifySelf: `left` }}>
+            <div style={{ justifySelf: `left`, width: `48px` }}>
               <a href="https://www.instagram.com/upsafetysolutions/">
-                <img src={Instagram} alt="Instagram Logo" />
+                <Instagram alt="Instagram Logo" />
               </a>
             </div>
           </SocialNetworks>

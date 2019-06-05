@@ -8,6 +8,7 @@ import Footer from "../components/Footer"
 import FeaturedFrontPage from "../components/FeaturedFrontPage"
 import styled from "styled-components"
 import PropTypes from "prop-types"
+import ScrollUpButton from "react-scroll-up-button"
 
 import SEO from "../components/seo"
 import SliderBanner1 from "../components/sliderBanner1"
@@ -105,8 +106,8 @@ const IndexPage = ({
           </FeaturedProducts>
           <FeaturedFrontPage products={edges} />
         </div>
-
         <Footer />
+        <ScrollUpButton style={{ backgroundColor: `#FF5100` }} />
       </PageTransition>
     </>
   )

@@ -649,3 +649,7 @@ tr:nth-child(even) {
   background: linear-gradient(to bottom, #ffe15a 0%, #e0b700 100%) !important;
   text-shadow: 1px 1px 0px #000 !important;
 }
+
+aside {
+  border-radius: 3px;
+}

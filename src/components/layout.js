@@ -1,16 +1,10 @@
-/**
- * Layout component that queries for data
- * with Gatsby's StaticQuery component
- *
- * See: https://www.gatsbyjs.org/docs/static-query/
- */
-
 import React from "react"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
-import Footer from "../components/Footer"
+import Footer from "./Footer"
+import ScrollUpButton from "react-scroll-up-button"
 
 import "./layout.css"
 
@@ -40,6 +34,7 @@ const Layout = ({ children }) => (
           <main>{children}</main>
         </div>
         <Footer />
+        <ScrollUpButton style={{ backgroundColor: `#FF5100` }} />
       </>
     )}
   />
