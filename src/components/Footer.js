@@ -48,6 +48,7 @@ const LogoWrapper = styled.div`
   @media (max-width: 768px) {
     justify-self: center;
     align-self: center;
+    padding-bottom: 1.45rem;
   }
 `
 
@@ -147,7 +148,7 @@ const NewsLetter = styled.div`
   align-self: end;
 
   @media (max-width: 768px) {
-    padding: 3rem 0;
+    padding: 1.45rem 0;
   }
 `
 
@@ -170,6 +171,7 @@ const EmailIconContainer = styled.div`
 
   @media (max-width: 768px) {
     padding-top: 0;
+    padding-bottom: 1rem;
   }
 `
 
@@ -242,7 +244,7 @@ export default function Footer() {
               >
                 <input type="hidden" name="form-name" value="Subscribe" />
                 <input type="hidden" name="bot-field" />
-                <label for="email"><strong>Email</strong>  </label>
+                <label style={{ display: `none` }} for="email"><strong>Email</strong></label>
                 <input
                   style={{ height: `2rem`, borderRadius: `3px`, border: `0` }}
                   type="email"
@@ -258,17 +260,17 @@ export default function Footer() {
           </NewsLetter>
           <SocialNetworks>
             <h3>View and share our content!</h3>
-            <div style={{ justifySelf: `right`, width: `48px` }}>
+            <div style={{ justifySelf: `right`, width: `48px`, paddingBottom: `1.2rem` }}>
               <a href="https://www.facebook.com/Up-Safety-Solutions-435208757038430">
                 <FaceBook alt="Facebook Logo" />
               </a>
             </div>
-            <div style={{width: `48px` }}>
+            <div style={{width: `48px`, paddingBottom: `1.2rem` }}>
               <a href="https://www.youtube.com/channel/UCexyI71DdTJfbMUBzQ0dzTQ/featured?view_as=public">
                 <YouTube alt="YouTube Logo" />
               </a>
             </div>
-            <div style={{ justifySelf: `left`, width: `48px` }}>
+            <div style={{ justifySelf: `left`, width: `48px`, paddingBottom: `1.2rem` }}>
               <a href="https://www.instagram.com/upsafetysolutions/">
                 <Instagram alt="Instagram Logo" />
               </a>
