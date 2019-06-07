@@ -63,7 +63,7 @@ export default class ProductItem extends Component {
         <form
           action="https://upsafetysolutions.foxycart.com/cart"
           method="post"
-          accept-charset="utf-8"
+          acceptCharset="utf-8"
         >
           <input
             type="hidden"
@@ -106,5 +106,5 @@ export default class ProductItem extends Component {
 
 ProductItem.propTypes = {
   node: PropTypes.object.isRequired,
-  categories: PropTypes.array.isRequired,
+  // categories: PropTypes.array.isRequired,
 }

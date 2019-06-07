@@ -20,7 +20,6 @@ const ProductGrid = styled.section`
 export default class FeaturedFrontPage extends Component {
   render() {
     const { products } = this.props
-    console.log(products);
     return (
       <ProductGrid>
         {products.map(product => {

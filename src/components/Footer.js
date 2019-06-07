@@ -244,7 +244,7 @@ export default function Footer() {
               >
                 <input type="hidden" name="form-name" value="Subscribe" />
                 <input type="hidden" name="bot-field" />
-                <label style={{ display: `none` }} for="email"><strong>Email</strong></label>
+                <label className="visuallyhidden" htmlFor="email"><strong>Email</strong></label>
                 <input
                   style={{ height: `2rem`, borderRadius: `3px`, border: `0` }}
                   type="email"

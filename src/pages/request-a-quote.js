@@ -5,7 +5,6 @@ import PageTransition from "gatsby-v2-plugin-page-transitions"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Btn from "../components/NLBtn"
-import Category from "./../templates/category"
 
 const QuoteForm = styled.form`
   max-width: 400px;
