@@ -339,7 +339,6 @@ const Menu = () => (
       <MiniCart data-fc-id="minicart minicart-empty">
         <a
           style={{ padding: `0 10px`, display: `flex` }}
-          rel="preconnect"
           href="https://upsafetysolutions.foxycart.com/cart?cart=view"
         >
           <span style={{ width: `18px` }}>

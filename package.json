@@ -7,7 +7,7 @@
   "dependencies": {
     "@gatsby-contrib/gatsby-plugin-elasticlunr-search": "^2.3.0",
     "babel-plugin-styled-components": "^1.10.0",
-    "gatsby": "^2.8.2",
+    "gatsby": "^2.8.6",
     "gatsby-image": "^2.1.2",
     "gatsby-plugin-favicon": "^3.1.6",
     "gatsby-plugin-google-analytics": "^2.0.20",
@@ -35,15 +35,12 @@
     "react-scroll-up-button": "^1.6.4",
     "react-spring": "^8.0.20",
     "react-tabs": "^3.0.0",
-    "styled-components": "^4.2.1"
+    "styled-components": "^4.3.1"
   },
   "devDependencies": {
     "dotenv": "^8.0.0",
-    "prettier": "^1.17.1"
+    "prettier": "^1.18.2"
   },
-  "keywords": [
-    "gatsby"
-  ],
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
@@ -52,12 +49,5 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
-  },
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
   }
 }
