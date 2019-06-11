@@ -2,9 +2,8 @@ import React from "react"
 import styled from "styled-components"
 
 const Btn = styled.button`
-  border: none;
   font-family: inherit;
-  font-size: inherit;
+  font-size: 0.9rem;
   color: inherit;
   background: none;
   cursor: pointer;
@@ -16,24 +15,21 @@ const Btn = styled.button`
   font-weight: 700;
   outline: none;
   position: relative;
-  -webkit-transition: all ease-in-out 0.5s;
-  -moz-transition: all ease-in-out 0.4s;
-  transition: all ease-in-out 0.4s;
-  background: #FF5100;
-  border: 3px solid #FF5100;
+  background: #ff5100;
+  border: 3px solid #ff5100;
   color: #000;
   border-radius: 3px;
   -webkit-box-shadow: 2px 2px 0px 2px rgba(230, 73, 0, 1);
   -moz-box-shadow: 2px 2px 0px 2px rgba(230, 73, 0, 1);
-  box-shadow: 2px 2px 0px 2px rgba(230,73,0,1);
+  box-shadow: 2px 2px 0px 2px rgba(230, 73, 0, 1);
+  -webkit-transition: all ease-in-out 0.3s;
+  -moz-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
 
   &:after {
     content: "";
     position: absolute;
     z-index: -1;
-    -webkit-transition: all ease-in-out 0.4s;
-    -moz-transition: all ease-in-out 0.4s;
-    transition: all ease-in-out 0.4s;
   }
 
   &:hover {
@@ -41,12 +37,12 @@ const Btn = styled.button`
   }
 
   &:active {
-    background: #E64900;
-    border: 3px solid #E64900;
+    background: #e64900;
+    border: 3px solid #e64900;
     color: #fff;
-    top: 2.5px;
-    left: 2.5px;
-    box-shadow: 0px 0px 0px 0px rgba(230,73,0,1)
+    top: 2px;
+    left: 2px;
+    box-shadow: 0px 0px 0px 0px rgba(230, 73, 0, 1);
   }
 
   &:before {

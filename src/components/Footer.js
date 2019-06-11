@@ -233,7 +233,6 @@ export default function Footer() {
                   <Email alt="Email Icon" />
                 </a>
               </EmailIconContainer>
-              <p>Subscribe to our Newsletter</p>
             </div>
             <div style={{ textAlign: `center` }}>
               <form
@@ -246,11 +245,12 @@ export default function Footer() {
               >
                 <input type="hidden" name="form-name" value="Subscribe" />
                 <input type="hidden" name="bot-field" />
-                <label className="visuallyhidden" htmlFor="email">
-                  Email
+                <label style={{color: `#fff`}} htmlFor="email">
+                Subscribe to our Newsletter
                 </label>
+                <br />
                 <input
-                  style={{ height: `2rem`, borderRadius: `3px`, border: `0` }}
+                  style={{ height: `2rem`, borderRadius: `3px`, border: `0`, marginTop: `10px` }}
                   type="email"
                   id="email"
                   name="Enter Your Email Address"
