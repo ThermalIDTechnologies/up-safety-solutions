@@ -631,23 +631,81 @@ tr:nth-child(even) {
   background-color: #f2f2f2;
 }
 
-[data-fc-sidecart] #fc .fc-fixed-button-right .fc-btn-action {
-  background-color: #ffd100 !important;
-  color: #fff;
-  background: -webkit-linear-gradient(top, #ffe15a 0%, #e0b700 100%) !important;
-  background: linear-gradient(to bottom, #ffe15a 0%, #e0b700 100%) !important;
-  text-shadow: 1px 1px 0px #000 !important;
+[data-fc-sidecart] {
+  background: #fff !important;
 }
 
-#fc .fc-action--checkout--button, #fc .fc-button--subscription-cancel, #fc .fc-button--submit {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  border-color: #000 !important;
+[data-fc-sidecart] #fc-cart {
+  background-color: #fff !important;
+}
+
+#fc .fc-sidebar {
+  background: #fff !important;
+}
+
+#fc p,
+#fc input,
+#fc button,
+#fc span,
+#fc a,
+#fc table,
+#fc table *,
+#fc div,
+#fc address,
+#fc li,
+#fc ul {
+  /* font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; */
+  font-family: inherit !important;
+}
+
+#fc .fc-cart__item__image span {
+  border: none !important;
+}
+
+#fc .fc-sidebar .fc-form-control,
+#fc .fc-sidebar .fc-form-control:focus {
+  border-left: 1px solid #cccccc;
+  border-right: 1px solid #cccccc;
+}
+
+#fc table {
+  border: none !important;
+}
+
+[data-fc-sidecart] #fc .fc-fixed-button-right .fc-btn-action {
   background-color: #ffd100 !important;
-  color: white;
+  color: #000 !important;
   background: -webkit-linear-gradient(top, #ffe15a 0%, #e0b700 100%) !important;
   background: linear-gradient(to bottom, #ffe15a 0%, #e0b700 100%) !important;
-  text-shadow: 1px 1px 0px #000 !important;
+  margin-left: -5px !important;
+}
+
+#fc .fc-action--checkout--button,
+#fc .fc-button--subscription-cancel,
+#fc .fc-button--submit {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-color: #ffd100 !important;
+  background-color: #ffd100 !important;
+  color: #111 !important;
+  font-weight: 600 !important;
+  text-transform: uppercase !important;
+  background: -webkit-linear-gradient(top, #ffe15a 0%, #e0b700 100%) !important;
+  background: linear-gradient(to bottom, #ffe15a 0%, #e0b700 100%) !important;
+  text-shadow: none !important;
+}
+
+#fa-lock path {
+  fill: #ff5100 !important;
+}
+
+#fc .fc-messages__empty-notification {
+  background-color: #FF5100 !important;
+  border-radius: 3px !important;
+}
+
+#fc .fc-messages__empty-notification a {
+  color: #fff !important;
 }
 
 aside {

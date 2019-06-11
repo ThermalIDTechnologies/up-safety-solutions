@@ -100,7 +100,7 @@ const Product = ({ data: { prismicProduct }, location }) => {
             <form
               action="https://upsafetysolutions.foxycart.com/cart"
               method="post"
-              accept-charset="utf-8"
+              acceptCharset="utf-8"
             >
               <input
                 type="hidden"

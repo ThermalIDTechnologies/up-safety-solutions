@@ -8,6 +8,8 @@ import FaceBook from "../assets/facebook.svg"
 import Instagram from "../assets/instagram.svg"
 import YouTube from "../assets/youtube.svg"
 import Email from "../assets/email.svg"
+import Stripe from "../assets/powered_by_stripe.svg"
+import CreditCards from "../assets/credit-cards.svg"
 
 const PageFooter = styled.footer`
   background: #000;
@@ -244,7 +246,9 @@ export default function Footer() {
               >
                 <input type="hidden" name="form-name" value="Subscribe" />
                 <input type="hidden" name="bot-field" />
-                <label className="visuallyhidden" htmlFor="email">Email</label>
+                <label className="visuallyhidden" htmlFor="email">
+                  Email
+                </label>
                 <input
                   style={{ height: `2rem`, borderRadius: `3px`, border: `0` }}
                   type="email"
@@ -260,17 +264,29 @@ export default function Footer() {
           </NewsLetter>
           <SocialNetworks>
             <h3>View and share our content!</h3>
-            <div style={{ justifySelf: `right`, width: `48px`, paddingBottom: `1.2rem` }}>
+            <div
+              style={{
+                justifySelf: `right`,
+                width: `48px`,
+                paddingBottom: `1.2rem`,
+              }}
+            >
               <a href="https://www.facebook.com/Up-Safety-Solutions-435208757038430">
                 <FaceBook alt="Facebook Logo" />
               </a>
             </div>
-            <div style={{width: `48px`, paddingBottom: `1.2rem` }}>
+            <div style={{ width: `48px`, paddingBottom: `1.2rem` }}>
               <a href="https://www.youtube.com/channel/UCexyI71DdTJfbMUBzQ0dzTQ/featured?view_as=public">
                 <YouTube alt="YouTube Logo" />
               </a>
             </div>
-            <div style={{ justifySelf: `left`, width: `48px`, paddingBottom: `1.2rem` }}>
+            <div
+              style={{
+                justifySelf: `left`,
+                width: `48px`,
+                paddingBottom: `1.2rem`,
+              }}
+            >
               <a href="https://www.instagram.com/upsafetysolutions/">
                 <Instagram alt="Instagram Logo" />
               </a>
@@ -278,6 +294,10 @@ export default function Footer() {
           </SocialNetworks>
         </FooterContainer>
       </PageFooter>
+      <div style={{backgroundColor: `#000`, textAlign: `center`}}>
+        <CreditCards style={{ maxHeight: "36px" }} />
+        <Stripe style={{ marginLeft: `8px` }} />
+      </div>
       <BottomLine>
         <p>
           © {new Date().getFullYear()} Up Safety Solutions. All Rights Reserved.
