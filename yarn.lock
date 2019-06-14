@@ -5594,10 +5594,10 @@ gatsby@^2.0.91:
     xstate "^4.3.2"
     yaml-loader "^0.5.0"
 
-gatsby@^2.9.2:
-  version "2.9.2"
-  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.9.2.tgz#caab8b601a2e3e2ba47c486b39ea9a1079060cda"
-  integrity sha512-lAxfwxBYXO380ZJFN9ygHzjAMw+9GDuRbQer7E6xMbjPB856agnPnbqBuasGAezocsYMRqg3rhaAnIOhnWcOtw==
+gatsby@^2.9.4:
+  version "2.9.4"
+  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.9.4.tgz#63efbf28d579bfe601e53908ebad712117355beb"
+  integrity sha512-01hd+GVgfUPctdzmOdypFG35Z80HDHl1uSOdtzK8OZ9Yohj/+n8XMxTKfiMhqALygQm0CiF0Mzb/YvLmnf6L1Q==
   dependencies:
     "@babel/code-frame" "^7.0.0"
     "@babel/core" "^7.0.0"
@@ -10216,10 +10216,10 @@ react-side-effect@^1.1.0:
     exenv "^1.2.1"
     shallowequal "^1.0.1"
 
-react-spring@^8.0.23:
-  version "8.0.23"
-  resolved "https://registry.yarnpkg.com/react-spring/-/react-spring-8.0.23.tgz#2a0ddaeb0816ea9e21898d04d3b8da7d1a3daa14"
-  integrity sha512-2mp7+0DnoBQ67h2zY0rFztdMqSm8gdvSWHgfwKz4TbLQ+N4n2IauB6DCMc046K8uvUNwDCUdlKgshUrCj14QUA==
+react-spring@^8.0.25:
+  version "8.0.25"
+  resolved "https://registry.yarnpkg.com/react-spring/-/react-spring-8.0.25.tgz#3b19c370e26b0a62630390c5daf3092e714805c4"
+  integrity sha512-KLSLI9ccpoxvxzCbtTqSOHNHhndxAeEcHsgFZoyybP3GpGh0axmtauUAH8c3XkozIW8r9gScvrCWw3F1EPIcBw==
   dependencies:
     "@babel/runtime" "^7.3.1"
     prop-types "^15.5.8"
