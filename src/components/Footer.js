@@ -254,7 +254,7 @@ export default function Footer() {
                   type="email"
                   id="email"
                   name="Enter Your Email Address"
-                  placeholder="email@email.com"
+                  placeholder=" email@email.com"
                   size="20"
                   required
                 />
