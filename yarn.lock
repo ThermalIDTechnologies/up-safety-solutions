@@ -5569,7 +5569,7 @@ gatsby@^2.0.91:
     xstate "^4.3.2"
     yaml-loader "^0.5.0"
 
-gatsby@^2.9.4:
+gatsby@^2.8.6:
   version "2.9.4"
   resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.9.4.tgz#63efbf28d579bfe601e53908ebad712117355beb"
   integrity sha512-01hd+GVgfUPctdzmOdypFG35Z80HDHl1uSOdtzK8OZ9Yohj/+n8XMxTKfiMhqALygQm0CiF0Mzb/YvLmnf6L1Q==
