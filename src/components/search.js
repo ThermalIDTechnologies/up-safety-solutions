@@ -5,8 +5,7 @@ import styled from "styled-components"
 
 import SrchIcon from "../assets/srch-icon.svg"
 
-const SrchBox = styled.input`
-`
+const SrchBox = styled.input``
 
 const SrchResCntr = styled.ul`
   font-weight: 300;
@@ -26,20 +25,32 @@ const SrchResCntr = styled.ul`
 const ResList = styled.li`
   display: flex;
   align-items: baseline;
-  padding-left: .6rem;
-  padding-top: .3rem;
+  padding: 0.3rem 0 0.3rem 0.6rem;
   margin: 0;
-  border-bottom: 1px solid rgba(0,0,0,.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
 
   a {
     text-decoration: none;
     color: #000;
-    
+    margin-bottom: 0.5rem;
   }
 
   img {
-    margin-bottom: .5rem;
-    padding-right: .5rem;
+    padding-right: 0.5rem;
+    margin: 0;
+  }
+
+  span {
+    border-bottom: 1px solid #ff5100;
+    transition: all ease-in-out 0.4s;
+  }
+
+  &:hover {
+    span {
+      color: #ff5100;
+      border-bottom: 1px solid #000;
+    }
   }
 `
 
@@ -52,10 +63,24 @@ export default class search extends Component {
   render() {
     return (
       <>
-        <div style={{display: `inline-flex`, width: `100%`, padding: `0px`, margin: `0px`, borderBottom: `2px solid #000` }}>
-          <SrchIcon style={{ backgroundColor: `#ffd100`, width: `35px`, height: `35px` }}/>
+        <div
+          style={{
+            display: `inline-flex`,
+            width: `100%`,
+            padding: `0px`,
+            margin: `0px`,
+            borderBottom: `2px solid #000`,
+          }}
+        >
+          <SrchIcon
+            style={{
+              backgroundColor: `#ffd100`,
+              width: `35px`,
+              height: `35px`,
+            }}
+          />
           <input
-            style={{width: `100%`, border: `none`, padding: `0 0 0 .5rem` }}
+            style={{ width: `100%`, border: `none`, padding: `0 0 0 .5rem` }}
             type="text"
             placeholder="Search products"
             value={this.state.query}
@@ -65,8 +90,10 @@ export default class search extends Component {
         <SrchResCntr>
           {this.state.results.map(page => (
             <ResList key={page.id}>
-              
-              <Link to={"/" + page.path}><img src={page.img} alt={page.title} />{page.title}</Link>
+              <Link to={"/" + page.path}>
+                <img src={page.img} alt={page.title} />
+                <span>{page.title}</span>
+              </Link>
             </ResList>
           ))}
         </SrchResCntr>
