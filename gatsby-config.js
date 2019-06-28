@@ -97,6 +97,21 @@ module.exports = {
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-netlify`,
     `gatsby-plugin-robots-txt`,
+    {
+      resolve: `@gatsby-contrib/gatsby-plugin-elasticlunr-search`,
+      options: {
+        // Fields to index
+        fields: [`title`, `sku`],
+        resolvers: {
+          PrismicProduct: {
+            title: node => node.data.title.text,
+            sku: node => node.data.item_code_sku.text,
+            img: node => node.data.cart_image.url,
+            path: node => node.uid,
+          },
+        },
+      },
+    },
     `gatsby-plugin-offline`,
   ],
 }
