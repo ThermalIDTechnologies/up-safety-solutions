@@ -55,7 +55,7 @@ const IndexPage = ({
       <Header />
       <PageTransition>
         <SEO
-          title="Home"
+          title="Safety Equipment Supplier"
           keywords={[
             `Up Safety Solutions`,
             `safety equipment`,
