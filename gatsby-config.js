@@ -5,7 +5,7 @@ require("dotenv").config({
 module.exports = {
   siteMetadata: {
     title: `Up Safety Solutions`,
-    description: `Up Safety Solutions provides quality safety equipment and clothing for various industries. We carry a wide range of safety equipment and clothing: safety glasses, respirators, protective sleeves, boot covers, non-slip boots and latex gloves to name a few. Let us be your go to safety equipment supplier for all of your industries needs; whether you are in food, cannabis, construction or manufacturing we have got you covered. Thank you for shopping with us for all of your safety needs!`,
+    description: `Up Safety Solutions provides quality personal protective equipment, safety equipment and clothing for various industries. We carry a wide range of safety equipment and clothing: safety glasses, respirators, protective sleeves, boot covers, non-slip boots and latex gloves to name a few. Let us be your go to safety equipment supplier for all of your industries needs; whether you are in food, cannabis, construction or manufacturing we have got you covered. Thank you for shopping with us for all of your safety needs!`,
     author: `Up Safety Solutions`,
     siteUrl: `https://www.upsafetysolutions.com`,
     nav: [
