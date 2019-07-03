@@ -102,7 +102,7 @@ module.exports = {
         trackingId: "UA-116389826-1",
       },
     },
-    `gatsby-plugin-sitemap`,
+    `gatsby-plugin-advanced-sitemap`,
     `gatsby-plugin-netlify`,
     `gatsby-plugin-robots-txt`,
     {
