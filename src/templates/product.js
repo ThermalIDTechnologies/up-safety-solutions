@@ -193,16 +193,16 @@ const Product = ({ data: { prismicProduct }, location }) => {
                     <td>{data.td12.text}</td>
                   </tr>
                   <tr>
-                    <td>{data.td13.text}</td>
-                    <td>{data.td14.text}</td>
+                    {data.td13 && data.td13.text ? <td>{data.td13.text}</td> : ''}
+                    {data.td14 && data.td14.text ? <td>{data.td14.text}</td> : ''}
                   </tr>
                   <tr>
-                    <td>{data.td15.text}</td>
-                    <td>{data.td16.text}</td>
+                    {data.td15 && data.td15.text ? <td>{data.td15.text}</td> : ''}
+                    {data.td16 && data.td16.text ? <td>{data.td16.text}</td> : ''}
                   </tr>
                   <tr>
-                    <td>{data.td17.text}</td>
-                    <td>{data.td18.text}</td>
+                    {data.td17 && data.td17.text ? <td>{data.td17.text}</td> : ''}
+                    {data.td18 && data.td18.text ? <td>{data.td18.text}</td> : ''}
                   </tr>
                 </tbody>
               </table>

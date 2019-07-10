@@ -5,8 +5,6 @@ import styled from "styled-components"
 
 import SrchIcon from "../assets/srch-icon.svg"
 
-const SrchBox = styled.input``
-
 const SrchResCntr = styled.ul`
   font-weight: 300;
   text-transform: none;
