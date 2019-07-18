@@ -1,8 +1,6 @@
 import React from "react"
 import PageTransition from "gatsby-v2-plugin-page-transitions"
 import { Link, graphql } from "gatsby"
-import "react-responsive-carousel/lib/styles/carousel.min.css"
-import { Carousel } from "react-responsive-carousel"
 import Header from "../components/header"
 import Footer from "../components/Footer"
 import FeaturedFrontPage from "../components/FeaturedFrontPage"
@@ -11,9 +9,7 @@ import PropTypes from "prop-types"
 import ScrollUpButton from "react-scroll-up-button"
 
 import SEO from "../components/seo"
-import SliderBanner1 from "../components/sliderBanner1"
-import SliderBanner2 from "../components/sliderBanner2"
-// import SliderBanner3 from "../components/sliderBanner3"
+import HeroSlider from "../components/HeroSlider"
 import SmallBanner1 from "../components/smallBanner1"
 import SmallBanner2 from "../components/smallBanner2"
 import SmallBanner3 from "../components/smallBanner3"
@@ -68,18 +64,7 @@ const IndexPage = ({
             `safety gear`,
           ]}
         />
-        <Carousel showStatus={false} showThumbs={false}>
-          <div>
-            <Link to="/all-products">
-              <SliderBanner1 />
-            </Link>
-          </div>
-          <div>
-            <Link to="/category-hand-protection">
-              <SliderBanner2 />
-            </Link>
-          </div>
-        </Carousel>
+        <HeroSlider />
         <div
           style={{
             margin: `1rem auto`,
