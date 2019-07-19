@@ -7,6 +7,7 @@ import FeaturedFrontPage from "../components/FeaturedFrontPage"
 import styled from "styled-components"
 import PropTypes from "prop-types"
 import ScrollUpButton from "react-scroll-up-button"
+import "../components/layout.css"
 
 import SEO from "../components/seo"
 import HeroSlider from "../components/HeroSlider"
