@@ -42,7 +42,6 @@ const HeroSlider = () => {
       }
     }
   `)
-  console.log(slides)
   const [state, setState] = useState({
     slides,
     activeIndex: 0,
