@@ -21,8 +21,8 @@ const HeroSlider = () => {
               banner_image {
                 localFile {
                   childImageSharp {
-                    fluid(quality: 100, maxWidth: 4000) {
-                      ...GatsbyImageSharpFluid_withWebp
+                    fluid(quality: 90, maxWidth: 1920) {
+                      ...GatsbyImageSharpFluid_withWebp_tracedSVG
                     }
                   }
                 }
