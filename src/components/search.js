@@ -79,7 +79,7 @@ export default class search extends Component {
           />
           <input
             style={{ width: `100%`, border: `none`, padding: `0 0 0 .5rem` }}
-            type="text"
+            type="search"
             placeholder="Search products"
             value={this.state.query}
             onChange={this.search}
