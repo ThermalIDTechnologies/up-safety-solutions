@@ -245,12 +245,17 @@ export default function Footer() {
               >
                 <input type="hidden" name="form-name" value="Subscribe" />
                 <input type="hidden" name="bot-field" />
-                <label style={{color: `#fff`}} htmlFor="email">
-                Subscribe to our Newsletter
+                <label style={{ color: `#fff` }} htmlFor="email">
+                  Subscribe to our Newsletter
                 </label>
                 <br />
                 <input
-                  style={{ height: `2rem`, borderRadius: `3px`, border: `0`, marginTop: `10px` }}
+                  style={{
+                    height: `2rem`,
+                    borderRadius: `3px`,
+                    border: `0`,
+                    marginTop: `10px`,
+                  }}
                   type="email"
                   id="email"
                   name="Enter Your Email Address"
@@ -294,7 +299,7 @@ export default function Footer() {
           </SocialNetworks>
         </FooterContainer>
       </PageFooter>
-      <div style={{backgroundColor: `#000`, textAlign: `center`}}>
+      <div style={{ backgroundColor: `#000`, textAlign: `center` }}>
         <CreditCards style={{ maxHeight: "36px" }} />
         <Stripe style={{ marginLeft: `8px` }} />
       </div>

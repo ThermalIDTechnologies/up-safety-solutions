@@ -151,7 +151,14 @@ const MiniCart = styled.p`
   z-index: 100;
 
   &:hover {
-    background-image: linear-gradient(to bottom, #ffd100, #ffb400, #ff9600, #ff7600, #ff5100);
+    background-image: linear-gradient(
+      to bottom,
+      #ffd100,
+      #ffb400,
+      #ff9600,
+      #ff7600,
+      #ff5100
+    );
   }
 
   @media (max-width: 700px) {
@@ -184,11 +191,6 @@ const Menu = () => (
                   <SubMenuItem>
                     <SubLink to="/category-first-aid-medical">
                       First Aid/Medical
-                    </SubLink>
-                  </SubMenuItem>
-                  <SubMenuItem>
-                    <SubLink to="/category-signs">
-                      Signs
                     </SubLink>
                   </SubMenuItem>
                 </NavSubMenu>
@@ -227,7 +229,9 @@ const Menu = () => (
                   </SubMenuItem>
                 </NavSubMenu>
                 <NavSubMenu>
-                  
+                  <SubMenuItem>
+                    <SubLink to="/category-signs">Signs</SubLink>
+                  </SubMenuItem>
                 </NavSubMenu>
               </SubMenuContainer>
             )}
@@ -249,7 +253,9 @@ const Menu = () => (
                     <SubLink to="/brand-crews">Crews</SubLink>
                   </SubMenuItem>
                   <SubMenuItem>
-                    <SubLink to="/brand-up-safety-solutions">Up Safety Solutions</SubLink>
+                    <SubLink to="/brand-up-safety-solutions">
+                      Up Safety Solutions
+                    </SubLink>
                   </SubMenuItem>
                 </NavSubMenu>
                 <NavSubMenu>
@@ -259,6 +265,9 @@ const Menu = () => (
                   <SubMenuItem>
                     <SubLink to="/brand-gojo">Gojo</SubLink>
                   </SubMenuItem>
+                  <SubMenuItem>
+                    <SubLink to="/brand-3-m">3M</SubLink>
+                  </SubMenuItem>
                 </NavSubMenu>
                 <NavSubMenu>
                   <SubMenuItem>
@@ -267,6 +276,9 @@ const Menu = () => (
                   <SubMenuItem>
                     <SubLink to="/brand-west-chester">West Chester</SubLink>
                   </SubMenuItem>
+                  <SubMenuItem>
+                    <SubLink to="/brand-servus">Servus</SubLink>
+                  </SubMenuItem>
                 </NavSubMenu>
                 <NavSubMenu>
                   <SubMenuItem>
@@ -274,14 +286,6 @@ const Menu = () => (
                   </SubMenuItem>
                   <SubMenuItem>
                     <SubLink to="/brand-best-welds">Best Welds</SubLink>
-                  </SubMenuItem>
-                </NavSubMenu>
-                <NavSubMenu>
-                  <SubMenuItem>
-                    <SubLink to="/brand-3-m">3M</SubLink>
-                  </SubMenuItem>
-                  <SubMenuItem>
-                    <SubLink to="/brand-servus">Servus</SubLink>
                   </SubMenuItem>
                 </NavSubMenu>
               </SubMenuContainer>
@@ -335,22 +339,25 @@ const Menu = () => (
         )}
       </Toggle>
       <MenuItem>
-      <MiniCartWrapper>
-      <MiniCart data-fc-id="minicart minicart-empty">
-        <a
-          style={{ padding: `0 10px`, display: `flex` }}
-          href="https://upsafetysolutions.foxycart.com/cart?cart=view"
-        >
-          <span style={{ width: `18px` }}>
-            <ShopIcon />
-          </span>
-          <span style={{ color: `#111`, paddingLeft: `8px` }} data-fc-id="minicart-quantity">
-            0
-          </span>
-        </a>
-      </MiniCart>
-    </MiniCartWrapper>
-    </MenuItem>
+        <MiniCartWrapper>
+          <MiniCart data-fc-id="minicart minicart-empty">
+            <a
+              style={{ padding: `0 10px`, display: `flex` }}
+              href="https://upsafetysolutions.foxycart.com/cart?cart=view"
+            >
+              <span style={{ width: `18px` }}>
+                <ShopIcon />
+              </span>
+              <span
+                style={{ color: `#111`, paddingLeft: `8px` }}
+                data-fc-id="minicart-quantity"
+              >
+                0
+              </span>
+            </a>
+          </MiniCart>
+        </MiniCartWrapper>
+      </MenuItem>
     </NavMenu>
   </Nav>
 )
