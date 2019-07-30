@@ -34,8 +34,8 @@ module.exports = {
         name: `Up Safety Solutions`,
         short_name: `UpSafety`,
         start_url: `/`,
-        background_color: `#000`,
-        theme_color: `#000`,
+        background_color: `#fff`,
+        theme_color: `#fff`,
         display: `minimal-ui`,
         icon: `src/images/UPSafety-Logo-VERTICAL.png`, // This path is relative to the root of the site.
       },
