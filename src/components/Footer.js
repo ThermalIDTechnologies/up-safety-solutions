@@ -7,6 +7,7 @@ import Logo from "../assets/logo-white.svg"
 import FaceBook from "../assets/facebook.svg"
 import Instagram from "../assets/instagram.svg"
 import YouTube from "../assets/youtube.svg"
+import Twitter from "../assets/twitter.svg"
 import Email from "../assets/email.svg"
 import Stripe from "../assets/powered_by_stripe.svg"
 import CreditCards from "../assets/credit-cards.svg"
@@ -97,7 +98,7 @@ const PageLink = styled(Link)`
 const SocialNetworks = styled.div`
   grid-area: social;
   display: grid; /* ACTING AS A GRID CONTAINER */
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto auto;
   justify-items: center;
   border-bottom: 2px solid #ffd100;
@@ -271,7 +272,6 @@ export default function Footer() {
             <h3>View and share our content!</h3>
             <div
               style={{
-                justifySelf: `right`,
                 width: `48px`,
                 paddingBottom: `1.2rem`,
               }}
@@ -285,9 +285,13 @@ export default function Footer() {
                 <YouTube alt="YouTube Logo" />
               </a>
             </div>
+            <div style={{ width: `48px`, paddingBottom: `1.2rem` }}>
+              <a href="https://twitter.com/up_sfty">
+                <Twitter alt="Twitter Logo" />
+              </a>
+            </div>
             <div
               style={{
-                justifySelf: `left`,
                 width: `48px`,
                 paddingBottom: `1.2rem`,
               }}
