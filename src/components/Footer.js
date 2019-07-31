@@ -5,7 +5,7 @@ import Btn from "./NLBtn"
 
 import Logo from "../assets/logo-white.svg"
 import FaceBook from "../assets/facebook.svg"
-import Instagram from "../assets/instagram.svg"
+import Instagram from "../assets/instagram-icon.svg"
 import YouTube from "../assets/youtube.svg"
 import Twitter from "../assets/twitter.svg"
 import Email from "../assets/email.svg"
