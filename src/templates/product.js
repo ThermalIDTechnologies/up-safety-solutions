@@ -344,6 +344,24 @@ export const pageQuery = graphql`
         td18 {
           text
         }
+        td19 {
+          text
+        }
+        td20 {
+          text
+        }
+        td21 {
+          text
+        }
+        td22 {
+          text
+        }
+        td23 {
+          text
+        }
+        td24 {
+          text
+        }
         categories {
           category {
             document {
