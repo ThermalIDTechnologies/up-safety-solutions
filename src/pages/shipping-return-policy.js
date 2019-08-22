@@ -101,7 +101,7 @@ const ShippingReturnPolicy = () => {
           <p>&nbsp;</p>
           <h2>Disclaimer</h2>
           <p>
-            THC Label Solutions&nbsp;reserve the right to modify, withdraw or
+            Up Safety Solutions&nbsp;reserve the right to modify, withdraw or
             terminate free shipping offers at any time without prior notice.
           </p>
           <p>&nbsp;</p>
