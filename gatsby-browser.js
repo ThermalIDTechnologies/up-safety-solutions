@@ -5,4 +5,3 @@ exports.onRouteUpdate = () => {
     FC.client.updateMiniCart();
   }
 }
-
