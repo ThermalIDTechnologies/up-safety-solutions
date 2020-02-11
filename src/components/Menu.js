@@ -354,6 +354,7 @@ const Menu = () => (
               >
                 0
               </span>
+              <span style={{ display: `none` }} data-fc-id="minicart-order-total">0</span>
             </a>
           </MiniCart>
         </MiniCartWrapper>
