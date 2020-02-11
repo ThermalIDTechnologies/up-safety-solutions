@@ -69,6 +69,12 @@ const Product = ({ data: { prismicProduct }, location }) => {
   if (data.categories[0].category) {
     categories = data.categories.map(c => c.category.document[0].data.name)
   }
+
+  const reformatImageUrl = () => {
+    let cutEnd = data.cart_image.url.replace("?auto=compress,format", "")
+    let finalform = cutEnd.replace("https://images.prismic.io/", "https://upsafetysolutions.cdn.prismic.io/")
+    return finalform
+  }
   return (
     <Layout>
       <SEO
@@ -120,7 +126,7 @@ const Product = ({ data: { prismicProduct }, location }) => {
               <input
                 type="hidden"
                 name={`${data.cart_image_hmac.text}`}
-                value={`${data.cart_image.url}`}
+                value={reformatImageUrl()}
               />
               <input
                 type="hidden"

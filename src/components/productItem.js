@@ -1,5 +1,5 @@
 import React, { Component } from "react"
-import PropTypes from "prop-types"
+import PropTypes, { string } from "prop-types"
 import styled from "styled-components"
 import { Link } from "gatsby"
 
@@ -48,9 +48,18 @@ const ItemPrice = styled.h3`
   }
 `
 
+
+
 export default class ProductItem extends Component {
   render() {
     const { node } = this.props
+
+    const reformatImageUrl = () => {
+      let cutEnd = node.data.cart_image.url.replace("?auto=compress,format", "")
+      let finalform = cutEnd.replace("https://images.prismic.io/", "https://upsafetysolutions.cdn.prismic.io/")
+      return finalform
+    }
+    
     return (
       <GridItem>
         <ItemLink style={{ width: `100%` }} to={`${node.uid}`}>
@@ -83,7 +92,7 @@ export default class ProductItem extends Component {
           <input
             type="hidden"
             name={`${node.data.cart_image_hmac.text}`}
-            value={`${node.data.cart_image.url}`}
+            value={reformatImageUrl()}
           />
           <input
             type="hidden"
